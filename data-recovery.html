@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>WiFi Accessories | Data Recovery & Unlocking</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+
+<!-- Meta -->
+<meta name="description" content="Fast and professional repair services for phones, tablets, laptops, and more in Niagara Falls. Book a same-day repair online.">
+<meta name="keywords" content="phone repair Niagara Falls, tech repair, tablet repair, data recovery, accessories">
+<link rel="canonical" href="https://www.wifiaccessories.ca/"/>
+
+<style>
+  :root{
+    --brand-bg:#0f1c2d;
+    --brand-accent:#f28c28;
+    --brand-text:#0f1c2d;
+    --white:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html,body{width:100%;overflow-x:hidden}
+  body{
+    margin:0;
+    font-family:'Roboto',sans-serif;
+    background-color:var(--brand-bg);
+    color:#fff;
+  }
+  html{scroll-behavior:smooth}
+
+  /* ===== Scoped, conflict-free nav (aboutus nav safe) ===== */
+  nav[data-nav="aboutus"]{
+    background:var(--white);
+    padding:12px 20px;
+    box-shadow:0 2px 4px rgba(0,0,0,.1);
+  }
+  nav[data-nav="aboutus"] .nav-wrapper{
+    width:100%;display:flex;align-items:center;justify-content:space-between;position:relative
+  }
+  nav[data-nav="aboutus"] .menu-toggle{
+    display:none;font-size:28px;background:none;border:none;cursor:pointer;color:var(--brand-text)
+  }
+  nav[data-nav="aboutus"] .nav-links{
+    display:flex;gap:20px;flex-wrap:wrap;align-items:center;flex-grow:1
+  }
+  nav[data-nav="aboutus"] .nav-link{
+    color:var(--brand-text);text-decoration:none;font-weight:bold;padding:8px 14px;border-radius:8px
+  }
+  nav[data-nav="aboutus"] .nav-link:hover{background:var(--brand-accent);color:#fff}
+  nav[data-nav="aboutus"] .nav-link.active{background:var(--brand-accent);color:#fff}
+
+  nav[data-nav="aboutus"] .dropdown{position:relative}
+  nav[data-nav="aboutus"] .dropdown > .nav-link::after{content:" ▾"}
+  nav[data-nav="aboutus"] .dropdown-content{
+    display:none;position:absolute;left:0;top:100%;
+    background:#fff;color:var(--brand-text);
+    box-shadow:0 4px 6px rgba(0,0,0,.1);z-index:1000;
+    min-width:220px;border-radius:6px;padding:8px 0
+  }
+  nav[data-nav="aboutus"] .dropdown-content a{
+    display:flex;gap:8px;align-items:center;padding:10px 16px;white-space:nowrap;color:var(--brand-text);text-decoration:none
+  }
+  nav[data-nav="aboutus"] .dropdown-content a:hover,
+  nav[data-nav="aboutus"] .dropdown-content a.active{
+    background:var(--brand-accent);color:#fff
+  }
+
+  /* desktop hover keeps working */
+  @media (min-width:769px){
+    nav[data-nav="aboutus"] .menu-toggle{display:none!important}
+    nav[data-nav="aboutus"] .nav-links{display:flex!important;gap:28px;flex-direction:row}
+    nav[data-nav="aboutus"] .dropdown:hover .dropdown-content{display:block!important}
+  }
+
+  /* mobile hamburger + accordion dropdowns */
+  @media (max-width:768px){
+    nav[data-nav="aboutus"]{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+    nav[data-nav="aboutus"] .menu-toggle{display:block}
+    nav[data-nav="aboutus"] .nav-links{display:none;flex-direction:column;width:100%;gap:10px}
+    nav[data-nav="aboutus"] .nav-links.open{display:flex}
+    nav[data-nav="aboutus"] .nav-links a{padding:12px 0;border-bottom:1px solid #eee;width:100%}
+    nav[data-nav="aboutus"] .dropdown-content{
+      position:static!important;box-shadow:none!important;border:1px solid #eee;border-radius:6px;margin:6px 0 10px;padding:6px 0;width:100%
+    }
+  }
+
+  /* phone number placement */
+  @media (min-width:769px){
+    nav[data-nav="aboutus"] .nav-links{flex:1 1 auto}
+    nav[data-nav="aboutus"] .nav-phone{display:flex!important;align-items:center;margin-left:auto}
+    nav[data-nav="aboutus"] .nav-phone a{display:inline-flex;gap:8px;align-items:center;text-decoration:none;color:var(--brand-text);font-weight:700;white-space:nowrap}
+    nav[data-nav="aboutus"] .mobile-only{display:none!important}
+  }
+  @media (max-width:768px){
+    nav[data-nav="aboutus"] .nav-phone{display:none!important}
+    nav[data-nav="aboutus"] .mobile-only{display:block!important}
+  }
+
+  /* ===== Header / Tagline ===== */
+  header{background:#fff;text-align:center;padding:20px}
+  header img{width:120px;height:auto;margin-bottom:10px;background:#fff;padding:5px;border-radius:8px}
+  header h1{color:var(--brand-text);font-size:36px;margin:0 0 10px}
+  header h2{color:var(--brand-accent);font-size:18px;font-weight:400;margin:0}
+  @media (max-width:768px){
+    header h2{white-space:nowrap!important;font-size:clamp(16px,5vw,22px)!important;line-height:1.2!important}
+    header{padding-left:10px;padding-right:10px}
+  }
+
+  .hero{ text-align:center; padding:60px 20px; background:var(--brand-bg); }
+  .hero h1{ color:var(--brand-accent); margin:0; }
+
+  /* ===== Services Grid ===== */
+  .services{display:flex;justify-content:center;align-items:stretch;padding:40px 10px;background:var(--brand-bg)}
+  .service-grid{display:grid;grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:20px; width:100%; max-width:1200px}
+  .service-tile{background:#fff;border-radius:12px;padding:20px;text-align:center;color:var(--brand-text);transition:transform .2s ease, box-shadow .2s ease}
+  .service-tile:hover{transform:translateY(-6px); box-shadow:0 8px 20px rgba(0,0,0,.15)}
+  .service-tile img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:10px}
+  .service-tile h4{color:var(--brand-accent);margin:8px 0 6px}
+  .service-tile p{color:#333;font-size:14px;margin:0}
+
+  /* Recovery icons grid */
+  .recovery-grid{
+    display:grid;grid-template-columns:repeat(6,1fr);gap:30px;max-width:1200px;margin:20px auto 0;font-size:15px;color:var(--brand-text)
+  }
+  @media (max-width:1024px){ .recovery-grid{grid-template-columns:repeat(3,1fr)} }
+  @media (max-width:768px){ .recovery-grid{grid-template-columns:repeat(2,1fr);gap:12px} }
+  @media (max-width:480px){ .recovery-grid{grid-template-columns:repeat(2,1fr)} }
+
+  .band{background:linear-gradient(to right,var(--brand-bg),var(--brand-accent));color:#fff;text-align:center;padding:40px 20px}
+  .band.alt{background:linear-gradient(to left,var(--brand-bg),var(--brand-accent))}
+
+  .testimonials{background:#fff;color:var(--brand-text);text-align:center;padding:50px 20px}
+  .testimonials h3{font-size:28px;color:var(--brand-accent);margin:0}
+  .testimonial{max-width:700px;margin:20px auto;font-style:italic}
+
+  .qr{background:#fff;color:var(--brand-text);text-align:center;padding:40px 20px}
+  .qr img{max-width:200px;border:4px solid var(--brand-text);border-radius:10px}
+  .qr p{font-weight:700;margin:0 0 15px}
+
+  footer{background:#fff;text-align:center;padding:20px;font-size:14px;color:var(--brand-text)}
+
+  /* Promo popup */
+  #promo-popup{display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;color:var(--brand-text);
+    padding:30px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.3);z-index:10000;max-width:90%;text-align:center}
+  #promo-popup h2{color:var(--brand-accent);margin:0 0 10px}
+  #promo-popup button{margin-top:20px;padding:10px 20px;background:var(--brand-accent);color:#fff;border:none;border-radius:6px;font-weight:700;cursor:pointer}
+</style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav data-nav="aboutus">
+  <div class="nav-wrapper">
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Home</a>
+
+      <!-- Device Repair dropdown -->
+      <div class="dropdown">
+        <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">Device Repair</a>
+        <div class="dropdown-content">
+          <a class="nav-link" href="phone-repair.html">📞 Phone Repair</a>
+          <a class="nav-link" href="tablet-repair.html">📱 Tablet Repair</a>
+          <a class="nav-link" href="laptop-repair.html">💻 Laptop Repair</a>
+          <!-- Active item for THIS page -->
+          <a class="nav-link active" href="data-recovery8.html">🔓 Data Recovery &amp; Unlocking</a>
+          <a class="nav-link" href="smart-accessories.html">🧩 Smart Accessories</a>
+          <a class="nav-link" href="gaming-consoles-repair.html">🎮 Gaming Consoles Repair</a>
+          <a class="nav-link" href="smartwatch-repair.html">⌚ Smartwatch Repairs</a>
+          <a class="nav-link" href="smart-glasses-repair.html">👓 Smart Glasses Repair</a>
+          <a class="nav-link" href="desktop-repair.html">🖥️ Desktop Repair</a>
+          <a class="nav-link" href="drone-repair.html">🚁 Drone Repair</a>
+          <a class="nav-link" href="device-trade.html">🔄 Device Trade</a>
+          <a class="nav-link" href="printer-repair.html">🖨️ Printer Repair</a>
+        </div>
+      </div>
+
+      <!-- IT Solutions dropdown -->
+      <div class="dropdown">
+        <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">IT Solutions</a>
+        <div class="dropdown-content">
+          <a class="nav-link" href="web-design-development.html">🌐 Web Design and Development</a>
+          <a class="nav-link" href="cloud-solutions.html">☁️ Cloud Solutions</a>
+          <a class="nav-link" href="network-security.html">🔐 Network Security</a>
+          <a class="nav-link" href="it-consulting.html">🧑‍💻 IT Consulting</a>
+          <a class="nav-link" href="dark-web-scan.html">🕵️‍♂️ Dark Web Scan</a>
+          <a class="nav-link" href="hosted-services.html">📡 Hosted Services</a>
+          <a class="nav-link" href="disaster-recovery-backup.html">🛡️ Disaster Recovery &amp; Backup</a>
+          <a class="nav-link" href="managed-it-services.html">🖥️ Managed IT Services</a>
+          <a class="nav-link" href="microsoft-office-365.html">📦 Microsoft Office 365</a>
+        </div>
+      </div>
+
+      <a class="nav-link" href="about-us.html">About Us</a>
+      <a class="nav-link" href="contact">Contact Us</a>
+      <a class="nav-link" href="booking.html">Book Appointment</a>
+
+      <!-- Mobile call -->
+      <span class="mobile-only"><a class="nav-link" href="tel:+16479723290">📞 Call Us</a></span>
+    </div>
+
+    <!-- Desktop phone (right) -->
+    <div class="nav-phone"><a href="tel:+16479723290" title="Call Now"></a></div>
+  </div>
+</nav>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <img src="logo.jpg" alt="WiFi Accessories Logo">
+  <h1>WiFi Accessories</h1>
+  <h2>Repair, Network, Upgrade - All in One Place</h2>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <h1>🔓 Data Recovery &amp; Unlocking</h1>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services">
+  <div class="service-grid">
+    <a href="booking.html" style="text-decoration:none;color:inherit">
+      <div class="service-tile">
+        <img src="logical-recovery.jpg" alt="Logical Recovery">
+        <h4>Logical Recovery</h4>
+        <p>Recover data from software issues. Fast and secure results.</p>
+      </div>
+    </a>
+
+    <a href="booking.html" style="text-decoration:none;color:inherit">
+      <div class="service-tile">
+        <img src="water-damage-recovery.jpg" alt="Water Damage Recovery">
+        <h4>Water Damage Recovery</h4>
+        <p>Save files from water-damaged devices. Quick, expert recovery.</p>
+      </div>
+    </a>
+
+    <a href="booking.html" style="text-decoration:none;color:inherit">
+      <div class="service-tile">
+        <img src="phone-unlocking.jpg" alt="Phone Unlocking">
+        <h4>Phone Unlocking</h4>
+        <p>Unlock devices and recover data locked by iCloud or Google accounts.</p>
+      </div>
+    </a>
+
+    <a href="booking.html" style="text-decoration:none;color:inherit">
+      <div class="service-tile">
+        <img src="not-listed.jpg" alt="Not Listed">
+        <h4>Don't see your device?</h4>
+        <p>Book now for unlisted phones or devices. We fix everything.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ===== BAND ===== -->
+<section class="band">
+  <h2>⚡ Fast &amp; Free Diagnostics – No Appointment Needed</h2>
+  <p style="max-width:800px;margin:auto">Walk in today for a <strong>free diagnostic check</strong> and get most repairs done <strong>within 30–60 minutes</strong>. No hidden fees, just expert service.</p>
+</section>
+
+<!-- ===== RECOVERY GRID ===== -->
+<section style="background:#fff;color:var(--brand-text);text-align:center;padding:40px 20px">
+  <h2 style="color:var(--brand-accent)">We Handle Every Data Recovery Issue — Hassle-Free</h2>
+  <div class="recovery-grid">
+    <div><p>💾 Accidental file recovery</p></div>
+    <div><p>🧠 Corrupted drive repair</p></div>
+    <div><p>🔓 Locked phone data retrieval</p></div>
+    <div><p>📀 External device recovery</p></div>
+    <div><p>🗃️ Formatted disk restoration</p></div>
+    <div><p>📷 Photo &amp; video recovery</p></div>
+    <div><p>🧪 Advanced data extraction</p></div>
+    <div><p>📂 Deleted partition recovery</p></div>
+    <div><p>💿 RAID data rescue</p></div>
+    <div><p>🖥️ System crash data salvage</p></div>
+    <div><p>🔍 Deleted email recovery</p></div>
+    <div><p>🛡️ Data protection &amp; backup strategy</p></div>
+  </div>
+</section>
+
+<section class="band alt">
+  <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:30px">
+    <div><span style="font-size:24px">💰</span><p>Best Price Guarantee</p></div>
+    <div><span style="font-size:24px">⚡</span><p>Same-Day Repairs</p></div>
+    <div><span style="font-size:24px">🧑‍🔧</span><p>Expert Technicians</p></div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h3>What Our Customers Say</h3>
+  <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ “Recovered all my lost files in no time! Highly professional.” – Mark P.</div>
+  <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ “Thought my data was gone forever, but they saved it. Thank you!” – Julia W.</div>
+</section>
+
+<div class="qr">
+  <p>Scan &amp; Find Us</p>
+  <img src="qr-code.jpg" alt="QR Code">
+</div>
+
+<footer>© 2025 WiFi Accessories | Designed for tech-savvy customers.</footer>
+
+<!-- Promo -->
+<div id="promo-popup">
+  <h2>🎉 Special Promotion!</h2>
+  <p>Get 10% off on all device repairs this week only. Mention code <strong>WIFI10</strong> when you visit or book online.</p>
+  <button onclick="document.getElementById('promo-popup').style.display='none'">Close</button>
+</div>
+
+<!-- ===== JS ===== -->
+<script>
+  // Promo popup
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      var el = document.getElementById('promo-popup');
+      if(el) el.style.display = 'block';
+    }, 2000);
+  });
+
+  // Nav interactions (hamburger + accordion dropdowns)
+  (function(){
+    function ready(fn){ if(document.readyState!=='loading'){fn()} else {document.addEventListener('DOMContentLoaded',fn)} }
+    ready(function(){
+      var nav = document.querySelector('nav[data-nav="aboutus"]');
+      if(!nav) return;
+
+      var toggleBtn = nav.querySelector('.menu-toggle');
+      var links = nav.querySelector('.nav-links');
+
+      if(toggleBtn && links){
+        toggleBtn.addEventListener('click', function(){
+          links.classList.toggle('open');
+          toggleBtn.textContent = links.classList.contains('open') ? '✖' : '☰';
+        });
+      }
+
+      // Accordion for dropdowns (mobile)
+      var dropdowns = nav.querySelectorAll('.dropdown');
+      function closeAll(except){
+        dropdowns.forEach(function(dd){
+          var panel = dd.querySelector('.dropdown-content');
+          if(panel && panel !== except){ panel.style.display = 'none'; panel.classList.remove('open'); }
+        });
+      }
+      dropdowns.forEach(function(dd){
+        var trigger = dd.querySelector(':scope > .nav-link');
+        var panel = dd.querySelector('.dropdown-content');
+        if(!trigger || !panel) return;
+        trigger.addEventListener('click', function(e){
+          // Only toggle on small screens
+          if (window.matchMedia('(max-width: 768px)').matches){
+            e.preventDefault();
+            var isOpen = panel.style.display === 'block';
+            closeAll(panel);
+            panel.style.display = isOpen ? 'none' : 'block';
+          }
+        });
+      });
+
+      // Ensure "Device Repair" parent stays visually active since this is its child
+      var deviceRepairParent = nav.querySelector('.dropdown > .nav-link.active');
+      if(deviceRepairParent){
+        deviceRepairParent.setAttribute('aria-current','page');
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
