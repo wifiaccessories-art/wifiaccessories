@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>WiFi Accessories | Data Recovery & Unlocking</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+
+<!-- Meta -->
+<meta name="description" content="Fast and professional repair services for phones, tablets, laptops, and more in Niagara Falls. Book a same-day repair online.">
+<meta name="keywords" content="phone repair Niagara Falls, tech repair, tablet repair, data recovery, accessories">
+<link rel="canonical" href="https://www.wifiaccessories.ca/"/>
+
+<style>
+  :root{
+    --brand-bg:#0f1c2d;
+    --brand-accent:#f28c28;
+    --brand-text:#0f1c2d;
+    --white:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html,body{width:100%;overflow-x:hidden}
+  body{
+    margin:0;
+    font-family:'Roboto',sans-serif;
+    background-color:var(--brand-bg);
+    color:#fff;
+  }
+  html{scroll-behavior:smooth}
+
+  /* ===== Scoped, conflict-free nav (aboutus nav safe) ===== */
+  nav[data-nav="aboutus"]{
+    background:var(--white);
+    padding:12px 20px;
+    box-shadow:0 2px 4px rgba(0,0,0,.1);
+  }
+  nav[data-nav="aboutus"] .nav-wrapper{
+    width:100%;display:flex;align-items:center;justify-content:space-between;position:relative
+  }
+  nav[data-nav="aboutus"] .menu-toggle{
+    display:none;font-size:28px;background:none;border:none;cursor:pointer;color:var(--brand-text)
+  }
+  nav[data-nav="aboutus"] .nav-links{
+    display:flex;gap:20px;flex-wrap:wrap;align-items:center;flex-grow:1
+  }
+  nav[data-nav="aboutus"] .nav-link{
+    color:var(--brand-text);text-decoration:none;font-weight:bold;padding:8px 14px;border-radius:8px
+  }
+  nav[data-nav="aboutus"] .nav-link:hover{background:var(--brand-accent);color:#fff}
+  nav[data-nav="aboutus"] .nav-link.active{background:var(--brand-accent);color:#fff}
+
+  nav[data-nav="aboutus"] .dropdown{position:relative}
+  nav[data-nav="aboutus"] .dropdown > .nav-link::after{content:" ▾"}
+  nav[data-nav="aboutus"] .dropdown-content{
+    display:none;position:absolute;left:0;top:100%;
+    background:#fff;color:var(--brand-text);
+    box-shadow:0 4px 6px rgba(0,0,0,.1);z-index:1000;
+    min-width:220px;border-radius:6px;padding:8px 0
+  }
+  nav[data-nav="aboutus"] .dropdown-content a{
+    display:flex;gap:8px;align-items:center;padding:10px 16px;white-space:nowrap;color:var(--brand-text);text-decoration:none
+  }
+  nav[data-nav="aboutus"] .dropdown-content a:hover,
+  nav[data-nav="aboutus"] .dropdown-content a.active{
+    background:var(--brand-accent);color:#fff
+  }
+
+  /* desktop hover keeps working */
+  @media (min-width:769px){
+    nav[data-nav="aboutus"] .menu-toggle{display:none!important}
+    nav[data-nav="aboutus"] .nav-links{display:flex!important;gap:28px;flex-direction:row}
+    nav[data-nav="aboutus"] .dropdown:hover .dropdown-content{display:block!important}
+  }
+
+  /* mobile hamburger + accordion dropdowns */
+  @media (max-width:768px){
+    nav[data-nav="aboutus"]{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+    nav[data-nav="aboutus"] .menu-toggle{display:block}
+    nav[data-nav="aboutus"] .nav-links{display:none;flex-direction:column;width:100%;gap:10px}
+    nav[data-nav="aboutus"] .nav-links.open{display:flex}
+    nav[data-nav="aboutus"] .nav-links a{padding:12px 0;border-bottom:1px solid #eee;width:100%}
+    nav[data-nav="aboutus"] .dropdown-content{
+      position:static!important;box-shadow:none!important;border:1px solid #eee;border-radius:6px;margin:6px 0 10px;padding:6px 0;width:100%
+    }
+  }
+
+  /* phone number placement */
+  @media (min-width:769px){
+    nav[data-nav="aboutus"] .nav-links{flex:1 1 auto}
+    nav[data-nav="aboutus"] .nav-phone{display:flex!important;align-items:center;margin-left:auto}
+    nav[data-nav="aboutus"] .nav-phone a{display:inline-flex;gap:8px;align-items:center;text-decoration:none;color:var(--brand-text);font-weight:700;white-space:nowrap}
+    nav[data-nav="aboutus"] .mobile-only{display:none!important}
+  }
+  @media (max-width:768px){
+    nav[data-nav="aboutus"] .nav-phone{display:none!important}
+    nav[data-nav="aboutus"] .mobile-only{display:block!important}
+  }
+
+  /* ===== Header / Tagline ===== */
+  header{background:#fff;text-align:center;padding:20px}
+  header img{width:120px;height:auto;margin-bottom:10px;background:#fff;padding:5px;border-radius:8px}
+  header h1{color:var(--brand-text);font-size:36px;margin:0 0 10px}
+  header h2{color:var(--brand-accent);font-size:18px;font-weight:400;margin:0}
+  @media (max-width:768px){
+    header h2{white-space:nowrap!important;font-size:clamp(16px,5vw,22px)!important;line-height:1.2!important}
+    header{padding-left:10px;padding-right:10px}
+  }
+
+  .hero{ text-align:center; padding:60px 20px; background:var(--brand-bg); }
+  .hero h1{ color:var(--brand-accent); margin:0; }
+
+  /* ===== Services Grid ===== */
+  .services{display:flex;justify-content:center;align-items:stretch;padding:40px 10px;background:var(--brand-bg)}
+  .service-grid{display:grid;grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:20px; width:100%; max-width:1200px}
+  .service-tile{background:#fff;border-radius:12px;padding:20px;text-align:center;color:var(--brand-text);transition:transform .2s ease, box-shadow .2s ease}
+  .service-tile:hover{transform:translateY(-6px); box-shadow:0 8px 20px rgba(0,0,0,.15)}
+  .service-tile img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:10px}
+  .service-tile h4{color:var(--brand-accent);margin:8px 0 6px}
+  .service-tile p{color:#333;font-size:14px;margin:0}
+
+  /* Recovery icons grid */
+  .recovery-grid{
+    display:grid;grid-template-columns:repeat(6,1fr);gap:30px;max-width:1200px;margin:20px auto 0;font-size:15px;color:var(--brand-text)
+  }
+  @media (max-width:1024px){ .recovery-grid{grid-template-columns:repeat(3,1fr)} }
+  @media (max-width:768px){ .recovery-grid{grid-template-columns:repeat(2,1fr);gap:12px} }
+  @media (max-width:480px){ .recovery-grid{grid-template-columns:repeat(2,1fr)} }
+
+  .band{background:linear-gradient(to right,var(--brand-bg),var(--brand-accent));color:#fff;text-align:center;padding:40px 20px}
+  .band.alt{background:linear-gradient(to left,var(--brand-bg),var(--brand-accent))}
+
+  .testimonials{background:#fff;color:var(--brand-text);text-align:center;padding:50px 20px}
+  .testimonials h3{font-size:28px;color:var(--brand-accent);margin:0}
+  .testimonial{max-width:700px;margin:20px auto;font-style:italic}
+
+  .qr{background:#fff;color:var(--brand-text);text-align:center;padding:40px 20px}
+  .qr img{max-width:200px;border:4px solid var(--brand-text);border-radius:10px}
+  .qr p{font-weight:700;margin:0 0 15px}
+
+  footer{background:#fff;text-align:center;padding:20px;font-size:14px;color:var(--brand-text)}
+
+  /* Promo popup */
+  #promo-popup{display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;color:var(--brand-text);
+    padding:30px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.3);z-index:10000;max-width:90%;text-align:center}
+  #promo-popup h2{color:var(--brand-accent);margin:0 0 10px}
+  #promo-popup button{margin-top:20px;padding:10px 20px;background:var(--brand-accent);color:#fff;border:none;border-radius:6px;font-weight:700;cursor:pointer}
+</style>
+
+<!-- keep existing page-specific style blocks -->
+<style id="aboutus-nav-safe-css">
+nav[data-nav="aboutus"]{background:#ffffff;padding:12px 20px;box-shadow:0 2px 4px rgba(0,0,0,.1)}
+nav[data-nav="aboutus"] .nav-wrapper{width:100%;display:flex;align-items:center;justify-content:space-between;position:relative}
+nav[data-nav="aboutus"] .menu-toggle{display:none;font-size:28px;background:none;border:none;cursor:pointer;color:#0f1c2d}
+nav[data-nav="aboutus"] .nav-links{display:flex;gap:20px;flex-wrap:wrap;align-items:center;flex-grow:1}
+nav[data-nav="aboutus"] .nav-link{color:#0f1c2d;text-decoration:none;font-weight:bold;padding:8px 16px;border-radius:8px}
+nav[data-nav="aboutus"] .nav-link.active{background:#f28c28;color:#fff}
+nav[data-nav="aboutus"] .dropdown{position:relative}
+nav[data-nav="aboutus"] .dropdown-content{display:none;position:absolute;background:#fff;color:#0f1c2d;box-shadow:0 4px 6px rgba(0,0,0,.1);z-index:1000;min-width:200px;border-radius:6px}
+nav[data-nav="aboutus"] .dropdown-content a{display:block;padding:10px 16px;white-space:nowrap}
+nav[data-nav="aboutus"] .dropdown-content.show{display:block !important}
+
+@media (min-width:769px){
+  nav[data-nav="aboutus"] .menu-toggle{display:none !important}
+  nav[data-nav="aboutus"] .nav-links{display:flex !important;gap:30px;flex-direction:row}
+  nav[data-nav="aboutus"] .dropdown:hover .dropdown-content{display:block !important}
+}
+@media (max-width:768px){
+  nav[data-nav="aboutus"]{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+  nav[data-nav="aboutus"] .menu-toggle{display:block}
+  nav[data-nav="aboutus"] .nav-links{display:none;flex-direction:column;width:100%;gap:10px}
+  nav[data-nav="aboutus"] .nav-links.open{display:flex}
+  nav[data-nav="aboutus"] .nav-links a{padding:12px 0;border-bottom:1px solid #eee;width:100%}
+  nav[data-nav="aboutus"] .dropdown-content{position:static !important;box-shadow:none !important;border:1px solid #eee;border-radius:6px;margin:6px 0 10px;padding:6px 0;width:100%}
+}
+</style>
+<style id="nav-desktop-phone-right">
+@media (min-width: 769px){
+  nav[data-nav="aboutus"] .nav-links{flex:1 1 auto;}
+  nav[data-nav="aboutus"] .nav-phone{display:flex !important;align-items:center;margin-left:auto;}
+  nav[data-nav="aboutus"] .nav-phone a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#0f1c2d;font-weight:700;white-space:nowrap;}
+  nav[data-nav="aboutus"] .nav-phone a:empty::before{content:"📞 647-972-3290";font-weight:700;}
+  nav[data-nav="aboutus"] .mobile-only{display:none !important;}
+}
+</style>
+<style id="desktop-repair-mobile-only">
+@media (max-width: 768px){
+  /* Service tiles: 1 per row */
+  .service-grid{ display:grid !important; grid-template-columns: 1fr !important; gap:16px !important; }
+  .service-tile img, .service img{ width:100% !important; height:160px !important; object-fit:cover !important; border-radius:8px !important; }
+
+  /* "We Handle Every Desktop Issue" -> 2 per row */
+  .issues-grid{ display:grid !important; grid-template-columns: repeat(2, minmax(0,1fr)) !important; gap:12px !important; }
+  .issues-grid .emoji{ display:block; font-size:22px; margin-bottom:4px; }
+  .issues-grid > *{ text-align:center; padding:6px; }
+}
+</style>
+<style id="full-bleed-util">
+  .full-bleed { 
+    margin-left: calc(50% - 50vw); 
+    margin-right: calc(50% - 50vw); 
+  }
+  body { overflow-x: hidden; }
+</style>
+<style id="fullbleed-strong">
+  /* Remove default browser page margins */
+  html, body { margin: 0; padding: 0; }
+  /* Strong full‑bleed for the gradient band */
+  .full-bleed {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    width: 100vw !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+</style>
+<style id="gradient-badges-fullbleed-fix">
+html, body { margin: 0; padding: 0; }
+.full-bleed {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+  width: 100vw !important;
+}
+.gradient-badges { padding-left: 0 !important; padding-right: 0 !important; }
+</style>
+<style id="tagline-one-line-fix">
+@media (max-width: 768px){
+  header h2{
+    white-space: nowrap !important;
+    font-size: clamp(16px, 5vw, 22px) !important;
+    line-height: 1.2 !important;
+  }
+}
+</style>
+<style id="equal-padding-fix">
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+}
+header {
+  text-align: center !important;
+  margin: 0 auto !important;
+  padding: 0 10px !important;
+}
+header h2 {
+  display: inline-block !important;
+}
+</style>
+
+<style id="nav-dropdown-css-sync">
+/* Synced from desktop-repair10 for identical dropdown spacing and hover */
+.dropdown-content {
+  min-width: 180px !important;
+  padding: 10px 0;
+}
+.dropdown-content a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px !important;
+  font-size: 15px;
+  line-height: 1.8;
+  white-space: nowrap;
+}
+.dropdown-content a:hover,
+.dropdown-content a.active {
+  background-color: #f28c28;
+  color: #ffffff !important;
+  border-radius: 4px;
+}
+.nav-links { gap: 8px !important; }
+.nav-link { padding: 4px 10px !important; }
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-content { display: block !important; }
+}
+/* Force show phone number on desktop like desktop-repair page */
+@media (min-width: 769px){
+  nav[data-nav="aboutus"] .nav-phone{display:flex !important;align-items:center;margin-left:auto;}
+  nav[data-nav="aboutus"] .nav-phone a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#0f1c2d;font-weight:700;white-space:nowrap;}
+  nav[data-nav="aboutus"] .nav-phone a:empty::before{content:"📞 647-972-3290";font-weight:700;font-size:18px;}
+}
+</style>
+
+<!-- NEW: Center dropdowns under parent on desktop -->
+<style id="center-dropdowns">
+@media (min-width:769px){
+  nav[data-nav="aboutus"] .dropdown-content{
+    left:50% !important;
+    transform:translateX(-50%) !important;
+    text-align:center;
+  }
+  nav[data-nav="aboutus"] .dropdown-content a{
+    justify-content:center;
+  }
+}
+</style>
+
+<script id="aboutus-nav-safe-js">
+(function(){
+  function ready(fn){ if(document.readyState!=='loading'){fn()} else {document.addEventListener('DOMContentLoaded',fn)} }
+  ready(function(){
+    var nav = document.querySelector('nav[data-nav="aboutus"]');
+    if(!nav) return;
+    var toggleBtn = nav.querySelector('.menu-toggle');
+    var links = nav.querySelector('.nav-links');
+    if(toggleBtn && links){
+      toggleBtn.addEventListener('click', function(){
+        links.classList.toggle('open');
+        toggleBtn.textContent = links.classList.contains('open') ? '✖' : '☰';
+      });
+    }
+    var dropdowns = nav.querySelectorAll('.dropdown');
+    function closeAll(except){
+      dropdowns.forEach(function(dd){
+        var panel = dd.querySelector('.dropdown-content');
+        if(panel && panel !== except){ panel.classList.remove('show'); }
+      });
+    }
+    dropdowns.forEach(function(dd){
+      var trigger = dd.querySelector(':scope > .nav-link') || dd.querySelector('a');
+      var panel = dd.querySelector('.dropdown-content');
+      if(!trigger || !panel) return;
+      trigger.removeAttribute('onclick');
+      trigger.addEventListener('click', function(e){
+        e.preventDefault();
+        var open = panel.classList.contains('show');
+        closeAll(panel);
+        panel.classList.toggle('show', !open);
+      });
+    });
+    document.addEventListener('click', function(e){
+      if(!nav.contains(e.target)){ closeAll(null); }
+    }, true);
+  });
+})();
+</script>
+
+<style id="nav-caret-fix">
+/* Remove duplicate caret because the link text already includes ▾ */
+nav[data-nav="aboutus"] .dropdown > .nav-link::after { content: "" !important; }
+</style>
+
+
+<style id="header-gap-fix">
+/* Match Desktop Repair page spacing below tagline */
+header {
+  text-align: center !important;
+  margin-bottom: 40px !important;
+}
+header h2 {
+  margin-bottom: 20px !important;
+}
+</style>
+
+
+<style id="mobile-nav-fix-20251031">
+/* ===== Mobile-only nav fixes (scoped) ===== */
+@media (max-width: 768px){
+  /* Ensure dropdowns are hidden by default on mobile and only shown via a class */
+  nav[data-nav="aboutus"] .dropdown-content{
+    display:none !important;
+    position: static !important;
+    box-shadow: none !important;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin: 6px 0 10px;
+    padding: 6px 0;
+    width: 100%;
+  }
+  nav[data-nav="aboutus"] .dropdown-content.show{
+    display:block !important;
+  }
+
+  /* Make parent rows full-width and easy to tap */
+  nav[data-nav="aboutus"] .nav-links{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    gap:10px;
+  }
+  nav[data-nav="aboutus"] .nav-links.open{ display:flex; }
+  nav[data-nav="aboutus"] .nav-links > .nav-link,
+  nav[data-nav="aboutus"] .dropdown > .nav-link{
+    display:block;
+    width:100%;
+    padding:12px 0;
+    border-bottom:1px solid #eee;
+  }
+
+  /* Keep phone number only in mobile-only slot */
+  nav[data-nav="aboutus"] .nav-phone{ display:none !important; }
+  nav[data-nav="aboutus"] .mobile-only{ display:block !important; }
+}
+</style>
+
+
+<style id="mobile-nav-style-20251031b">
+@media (max-width:768px){
+  /* Card-like list items */
+  nav[data-nav="aboutus"] .nav-links > li{
+    background:#fff;
+    border-radius:12px;
+    margin:10px 12px;
+    padding:6px 14px;
+    list-style:none;
+    box-shadow:0 1px 0 rgba(0,0,0,0.04);
+  }
+  nav[data-nav="aboutus"] .nav-links > li a.nav-link{
+    font-weight:700;
+    display:block;
+  }
+
+  /* Only one chevron arrow on dropdown parents */
+  nav[data-nav="aboutus"] .dropdown > .nav-link .caret,
+  nav[data-nav="aboutus"] .dropdown > .nav-link .arrow,
+  nav[data-nav="aboutus"] .dropdown > .nav-link i{
+    display:none !important;
+  }
+  nav[data-nav="aboutus"] .dropdown > .nav-link{
+    position:relative;
+    padding-right:26px;
+  }
+  nav[data-nav="aboutus"] .dropdown > .nav-link::after{
+    content:"▾";
+    position:absolute;
+    right:6px;
+    top:50%;
+    transform:translateY(-50%) rotate(0deg);
+    transition:transform .2s ease;
+    font-weight:400;
+  }
+  nav[data-nav="aboutus"] .dropdown.open > .nav-link::after{
+    transform:translateY(-50%) rotate(180deg);
+  }
+
+  /* Submenu styling: full width, indented, soft background */
+  nav[data-nav="aboutus"] .dropdown-content{
+    background:#fafafa;
+    border-radius:10px;
+    margin:8px 0 2px;
+    padding:6px 8px;
+  }
+  nav[data-nav="aboutus"] .dropdown-content a{
+    display:block;
+    padding:10px 8px 10px 6px;
+    border-radius:8px;
+    margin:2px 0;
+    font-weight:600;
+  }
+  nav[data-nav="aboutus"] .dropdown-content a:active{
+    opacity:.85;
+  }
+
+  /* Tidy the 'Call Us' row with icon */
+  nav[data-nav="aboutus"] .nav-call{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+
+  /* Ensure menu button spacing */
+  nav[data-nav="aboutus"] .menu-toggle{
+    margin:10px 12px;
+    font-size:28px;
+    line-height:1;
+  }
+}
+</style>
+
+
+<style id="mobile-nav-style-20251031c">
+@media (max-width:768px){
+  /* Full-width stacked list, left aligned like the reference */
+  nav[data-nav="aboutus"] .nav-links{
+    padding: 6px 0 14px;
+  }
+  nav[data-nav="aboutus"] .nav-links > li{
+    margin:8px 12px;
+    padding:0;              /* anchor handles padding */
+    width:auto;             /* container auto */
+    border-radius:14px;
+  }
+  nav[data-nav="aboutus"] .nav-links > li > a.nav-link{
+    display:block;
+    width:100%;
+    padding:14px 16px;
+    text-align:left;
+    border-radius:14px;
+  }
+
+  /* Ensure dropdown parents are also full-width */
+  nav[data-nav="aboutus"] .dropdown > .nav-link{
+    display:block;
+    width:100%;
+    padding:14px 36px 14px 16px; /* space for chevron */
+    text-align:left;
+  }
+
+  /* Chevron right-aligned */
+  nav[data-nav="aboutus"] .dropdown > .nav-link::after{
+    right:14px;
+  }
+
+  /* Submenu slightly indented under parent */
+  nav[data-nav="aboutus"] .dropdown-content{
+    margin:8px 6px 2px 6px;
+    padding:6px 6px;
+  }
+  nav[data-nav="aboutus"] .dropdown-content a{
+    padding:12px 10px;
+  }
+
+  /* Hamburger/close button small and aligned left within header row */
+  nav[data-nav="aboutus"] .menu-toggle{
+    font-size:22px;
+    margin:8px 12px;
+  }
+
+  /* If you have a brand row, keep it from shifting */
+  nav[data-nav="aboutus"] .brand-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:8px 12px;
+  }
+}
+</style>
+
+
+<style id="mobile-nav-style-20251031d">
+@media (max-width:768px){
+  /* Stack everything in the list as full-width rows */
+  nav[data-nav="aboutus"] .nav-links{
+    display:block !important;
+    padding:6px 0 14px;
+  }
+  /* Each direct child (either <a.nav-link> or <div.dropdown>) looks like a row card */
+  nav[data-nav="aboutus"] .nav-links > *{
+    display:block !important;
+    background:#fff !important;
+    border-radius:14px !important;
+    margin:8px 12px !important;
+    box-shadow:0 1px 0 rgba(0,0,0,0.04) !important;
+  }
+
+  /* Simple rows */
+  nav[data-nav="aboutus"] .nav-links > a.nav-link{
+    padding:14px 16px !important;
+    text-align:left !important;
+    font-weight:700 !important;
+    text-decoration:none !important;
+    background:#fff !important;
+    border:none !important;
+  }
+
+  /* Dropdown parents */
+  nav[data-nav="aboutus"] .nav-links > .dropdown > .nav-link{
+    display:block !important;
+    width:100% !important;
+    padding:14px 36px 14px 16px !important; /* space for chevron */
+    text-align:left !important;
+    font-weight:700 !important;
+    text-decoration:none !important;
+    background:#fff !important;
+    border:none !important;
+  }
+
+  /* Kill any pre-existing right/left badges or arrows to avoid duplicates */
+  nav[data-nav="aboutus"] .nav-links > .dropdown > .nav-link .caret,
+  nav[data-nav="aboutus"] .nav-links > .dropdown > .nav-link .arrow,
+  nav[data-nav="aboutus"] .nav-links > .dropdown > .nav-link i{
+    display:none !important;
+  }
+
+  /* Our chevron */
+  nav[data-nav="aboutus"] .nav-links > .dropdown > .nav-link::after{
+    content:"▾";
+    position:absolute;
+    right:14px;
+    top:50%;
+    transform:translateY(-50%) rotate(0deg);
+    transition:transform .2s ease;
+    font-weight:400;
+  }
+  nav[data-nav="aboutus"] .nav-links > .dropdown.open > .nav-link::after{
+    transform:translateY(-50%) rotate(180deg);
+  }
+
+  /* Submenu: full width inside the same card, soft background */
+  nav[data-nav="aboutus"] .nav-links > .dropdown .dropdown-content{
+    display:none;
+    position:static !important;
+    background:#fafafa !important;
+    border-radius:10px !important;
+    margin:8px 6px 10px 6px !important;
+    padding:6px 6px !important;
+    box-shadow:none !important;
+    width:auto !important;
+  }
+  nav[data-nav="aboutus"] .nav-links > .dropdown .dropdown-content.show{
+    display:block !important;
+  }
+  nav[data-nav="aboutus"] .nav-links > .dropdown .dropdown-content a{
+    display:block !important;
+    padding:12px 10px !important;
+    border-radius:8px !important;
+    margin:2px 0 !important;
+    font-weight:600 !important;
+    background:transparent !important;
+    border:none !important;
+  }
+
+  /* Mobile-only phone row keeps same style as others */
+  nav[data-nav="aboutus"] .mobile-only{ display:block !important; }
+  nav[data-nav="aboutus"] .nav-phone{ display:none !important; }
+
+  /* Tidy hamburger/close */
+  nav[data-nav="aboutus"] .menu-toggle{
+    font-size:22px !important;
+    margin:10px 12px !important;
+    line-height:1 !important;
+  }
+}
+</style>
+
+
+<style id="mobile-nav-style-20251031e">
+@media (max-width:768px){
+  /* Prevent clipping and make rows consistent */
+  nav[data-nav="aboutus"] .nav-links > *{
+    overflow:visible !important;
+  }
+
+  /* Put chevron right after label (inline), not far right */
+  nav[data-nav="aboutus"] .nav-links > .dropdown > .nav-link{
+    position:relative;
+    padding-right:24px !important;
+  }
+  nav[data-nav="aboutus"] .nav-links > .dropdown > .nav-link::after{
+    right:10px !important;
+  }
+
+  /* Dropdown panel must be visible and sit within the white card */
+  nav[data-nav="aboutus"] .nav-links > .dropdown .dropdown-content{
+    display:none;
+    position:static !important;
+    z-index:2 !important;
+  }
+  nav[data-nav="aboutus"] .nav-links > .dropdown .dropdown-content.show{
+    display:block !important;
+  }
+
+  /* Submenu visual spacing */
+  nav[data-nav="aboutus"] .dropdown-content a{
+    padding:12px 10px !important;
+  }
+
+  /* Hamburger size/spacing */
+  nav[data-nav="aboutus"] .menu-toggle{
+    font-size:22px !important;
+    margin:10px 12px !important;
+  }
+}
+</style>
+
+
+<style id="mobile-nav-style-20251031f">
+@media (max-width:768px){
+  /* Always stack as rows */
+  nav[data-nav="aboutus"] .nav-links{ display:block !important; padding:8px 0 16px; }
+  nav[data-nav="aboutus"] .nav-links > *{
+    display:block !important; background:#fff !important; border-radius:14px !important;
+    margin:8px 12px !important; box-shadow:0 1px 0 rgba(0,0,0,.04) !important;
+  }
+  nav[data-nav="aboutus"] .nav-links > a,
+  nav[data-nav="aboutus"] .nav-links > .nav-link,
+  nav[data-nav="aboutus"] .nav-links > .menu-link{
+    padding:14px 16px !important; text-align:left !important; font-weight:700 !important; text-decoration:none !important;
+  }
+
+  /* Dropdown parent (regardless of classname) */
+  nav[data-nav="aboutus"] .nav-links > .dropdown > a,
+  nav[data-nav="aboutus"] .nav-links > .dropdown > .nav-link,
+  nav[data-nav="aboutus"] .nav-links > [class*="drop"] > a,
+  nav[data-nav="aboutus"] .nav-links > [class*="drop"] > .nav-link,
+  nav[data-nav="aboutus"] .nav-links > [class*="menu"] > .nav-link{
+    position:relative !important; display:block !important; width:100% !important;
+    padding:14px 36px 14px 16px !important; text-align:left !important; font-weight:700 !important;
+  }
+  nav[data-nav="aboutus"] .nav-links > [class*="drop"] > .nav-link::after,
+  nav[data-nav="aboutus"] .nav-links > [class*="drop"] > a::after{
+    content:"▾"; position:absolute; right:14px; top:50%; transform:translateY(-50%) rotate(0deg); transition:transform .2s ease;
+  }
+  nav[data-nav="aboutus"] .nav-links > [class*="drop"].open > .nav-link::after,
+  nav[data-nav="aboutus"] .nav-links > [class*="drop"].open > a::after{
+    transform:translateY(-50%) rotate(180deg);
+  }
+
+  /* Any dropdown panel (menu/content) */
+  nav[data-nav="aboutus"] .nav-links [class*="dropdown"][class*="content"],
+  nav[data-nav="aboutus"] .nav-links [class*="dropdown"][class*="menu"],
+  nav[data-nav="aboutus"] .nav-links .dropdown-content,
+  nav[data-nav="aboutus"] .nav-links .dropdown-menu{
+    display:none; position:static !important; background:#fafafa !important; border-radius:10px !important;
+    margin:8px 6px 10px 6px !important; padding:6px 6px !important; box-shadow:none !important; width:auto !important; z-index:3 !important;
+  }
+  nav[data-nav="aboutus"] .nav-links [class*="dropdown"][class*="content"].show,
+  nav[data-nav="aboutus"] .nav-links [class*="dropdown"][class*="menu"].show,
+  nav[data-nav="aboutus"] .nav-links .dropdown-content.show,
+  nav[data-nav="aboutus"] .nav-links .dropdown-menu.show{
+    display:block !important;
+  }
+  nav[data-nav="aboutus"] .nav-links .dropdown-content a,
+  nav[data-nav="aboutus"] .nav-links .dropdown-menu a{
+    display:block !important; padding:12px 10px !important; border-radius:8px !important; margin:2px 0 !important; font-weight:600 !important;
+  }
+}
+</style>
+
+
+<style id="mobile-nav-style-20251031g">
+@media (max-width:768px){
+  /* Hide menu by default; show when .open */
+  nav[data-nav="aboutus"] .nav-links{ display:none !important; }
+  nav[data-nav="aboutus"] .nav-links.open{ display:block !important; }
+  /* Keep header hamburger tidy */
+  nav[data-nav="aboutus"] .menu-toggle,
+  nav[data-nav="aboutus"] .hamburger,
+  nav[data-nav="aboutus"] .menu-btn{
+    cursor:pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+</style>
+
+
+<style>
+@media (max-width:768px){
+  /* Move hamburger icon above nav-links when opened */
+  nav[data-nav="aboutus"] .nav-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav[data-nav="aboutus"] .menu-toggle {
+    order: -1; /* Puts hamburger above the Home link */
+    margin-bottom: 8px;
+  }
+  nav[data-nav="aboutus"] .nav-links {
+    width: 100%;
+  }
+}
+</style>
+
+
+<style id="mobile-dropdown-checkbox-20251031">
+@media (max-width:768px){
+  /* Hide the native checkbox */
+  nav[data-nav="aboutus"] .dropdown .dd-toggle{
+    position:absolute;
+    opacity:0;
+    pointer-events:none;
+  }
+  /* Force default hidden for submenu */
+  nav[data-nav="aboutus"] .dropdown .dropdown-content{
+    display:none !important;
+    position:static !important;
+    background:#fafafa !important;
+    border-radius:10px !important;
+    margin:8px 6px 10px 6px !important;
+    padding:6px 6px !important;
+    box-shadow:none !important;
+    width:auto !important;
+    z-index:1 !important;
+  }
+  /* Show submenu when checkbox checked */
+  nav[data-nav="aboutus"] .dropdown .dd-toggle:checked ~ .dropdown-content{
+    display:block !important;
+  }
+  /* Visual cue on parent when open */
+  nav[data-nav="aboutus"] .dropdown .dd-toggle:checked + .nav-link{
+    background:#ffffff !important;
+    color:#0f1c2d !important;
+  }
+}
+</style>
+
+
+<style id="mobile-open-strong-20251031">
+@media (max-width:768px){
+  /* Hide all submenus by default on mobile */
+  nav[data-nav="aboutus"] .dropdown > .dropdown-content{
+    display:none !important;
+  }
+  /* Show only when our class is present */
+  nav[data-nav="aboutus"] .dropdown.mobile-open > .dropdown-content{
+    display:block !important;
+  }
+  /* Keep the parent label readable */
+  nav[data-nav="aboutus"] .dropdown.mobile-open > .nav-link{
+    background:#ffffff !important;
+    color:#0f1c2d !important;
+    position:relative !important;
+    z-index:2 !important;
+  }
+}
+</style>
+
+
+<style id="hide-dd-toggle-globally-20251031">
+/* Hide any leftover checkbox toggles at ALL breakpoints */
+nav[data-nav="aboutus"] .dd-toggle{
+  position:absolute !important;
+  width:0 !important;
+  height:0 !important;
+  opacity:0 !important;
+  pointer-events:none !important;
+  appearance:none !important;
+  -webkit-appearance:none !important;
+  border:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+</style>
+
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav data-nav="aboutus" style="background-color:#ffffff; padding:12px 20px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+<div class="nav-wrapper">
+<div class="menu-toggle">☰</div>
+<div class="nav-links">
+<a class="nav-link" href="index.html">Home</a>
+<div class="dropdown" style="position: relative;">
+<a class="nav-link" href="#" style="cursor:pointer;">Device Repair ▾</a>
+<div class="dropdown-content">
+<a class="nav-link" href="phone-repair.html">📞 Phone Repair</a>
+<a class="nav-link" href="tablet-repair.html">📱 Tablet Repair</a>
+<a class="nav-link" href="laptop-repair.html">💻 Laptop Repair</a>
+<a class="nav-link inactive" href="data-recovery10.html">🔓 Data Recovery &amp; Unlocking</a>
+<a class="nav-link" href="smart-accessories.html">🧩 Smart Accessories</a>
+<a class="nav-link" href="gaming-consoles-repair.html">🎮 Gaming Consoles Repair</a>
+<a class="nav-link" href="smartwatch-repair.html">⌚ Smartwatch Repairs</a>
+<a class="nav-link" href="smart-glasses-repair.html">👓 Smart Glasses Repair</a>
+<a class="nav-link" href="desktop-repair.html">🖥️ Desktop Repair</a>
+<a class="nav-link" href="drone-repair.html">🚁 Drone Repair</a>
+<a class="nav-link" href="device-trade.html">🔄 Device Trade</a>
+<a class="nav-link" href="printer-repair.html">🖨️ Printer Repair</a>
+</div>
+</div>
+<div class="dropdown" style="position: relative;">
+<a class="nav-link" href="#" style="cursor:pointer;">IT Solutions ▾</a>
+<div class="dropdown-content">
+<a class="nav-link" href="web-design-development.html">🌐 Web Design &amp; Development</a>
+<a class="nav-link" href="cloud-solutions.html">☁️ Cloud Solutions</a>
+<a class="nav-link" href="network-security.html">🔐 Network Security</a>
+<a class="nav-link" href="it-consulting.html">🧑‍💻 IT Consulting</a>
+<a class="nav-link" href="dark-web-scan.html">🕵️‍♂️ Dark Web Scan</a>
+<a class="nav-link" href="hosted-services.html">📡 Hosted Services</a>
+<a class="nav-link" href="disaster-recovery-backup.html">🛡️ Disaster Recovery &amp; Backup</a>
+<a class="nav-link" href="managed-it-services.html">🖥️ Managed IT Services</a>
+<a class="nav-link" href="microsoft-office-365.html">📦 Microsoft Office 365</a>
+</div>
+</div>
+<a class="nav-link" href="about-us.html">About Us</a>
+<a class="nav-link" href="contact.html">Contact Us</a>
+<a class="nav-link" href="booking.html">Book Appointment</a>
+<span class="mobile-only">
+<a class="nav-link" href="tel:+16479723290">📞 Call Us</a>
+</span>
+</div>
+<div class="nav-phone">
+<a href="tel:+16479723290" title="Call Now"></a>
+</div>
+</div>
+</nav>
+
+<!-- ===== HEADER ===== -->
+<header>
+<img alt="WiFi Accessories Logo" src="logo.jpg" style="width: 120px; height: auto; margin-bottom: 10px; background-color: #fff; padding: 5px; border-radius: 8px"/>
+<h1>WiFi Accessories</h1>
+<h2 style="font-size: 36px; font-weight: normal; color: #f28c28; margin-top: 10px;">
+    Repair, Network, Upgrade - All in One Place
+</h2>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <h1>🔓 Data Recovery &amp; Unlocking</h1>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services">
+  <div class="service-grid">
+    <a href="booking.html" style="text-decoration:none;color:inherit">
+      <div class="service-tile">
+        <img src="logical-recovery.jpg" alt="Logical Recovery">
+        <h4>Logical Recovery</h4>
+        <p>Recover data from software issues. Fast and secure results.</p>
+      </div>
+    </a>
+
+    <a href="booking.html" style="text-decoration:none;color:inherit">
+      <div class="service-tile">
+        <img src="water-damage-recovery.jpg" alt="Water Damage Recovery">
+        <h4>Water Damage Recovery</h4>
+        <p>Save files from water-damaged devices. Quick, expert recovery.</p>
+      </div>
+    </a>
+
+    <a href="booking.html" style="text-decoration:none;color:inherit">
+      <div class="service-tile">
+        <img src="phone-unlocking.jpg" alt="Phone Unlocking">
+        <h4>Phone Unlocking</h4>
+        <p>Unlock devices and recover data locked by iCloud or Google accounts.</p>
+      </div>
+    </a>
+
+    <a href="booking.html" style="text-decoration:none;color:inherit">
+      <div class="service-tile">
+        <img src="not-listed.jpg" alt="Not Listed">
+        <h4>Don't see your device?</h4>
+        <p>Book now for unlisted phones or devices. We fix everything.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ===== BAND ===== -->
+<section class="band">
+  <h2>⚡ Fast &amp; Free Diagnostics – No Appointment Needed</h2>
+  <p style="max-width:800px;margin:auto">Walk in today for a <strong>free diagnostic check</strong> and get most repairs done <strong>within 30–60 minutes</strong>. No hidden fees, just expert service.</p>
+</section>
+
+<!-- ===== RECOVERY GRID ===== -->
+<section style="background:#fff;color:var(--brand-text);text-align:center;padding:40px 20px">
+  <h2 style="color:var(--brand-accent)">We Handle Every Data Recovery Issue — Hassle-Free</h2>
+  <div class="recovery-grid">
+    <div><p>💾 Accidental file recovery</p></div>
+    <div><p>🧠 Corrupted drive repair</p></div>
+    <div><p>🔓 Locked phone data retrieval</p></div>
+    <div><p>📀 External device recovery</p></div>
+    <div><p>🗃️ Formatted disk restoration</p></div>
+    <div><p>📷 Photo &amp; video recovery</p></div>
+    <div><p>🧪 Advanced data extraction</p></div>
+    <div><p>📂 Deleted partition recovery</p></div>
+    <div><p>💿 RAID data rescue</p></div>
+    <div><p>🖥️ System crash data salvage</p></div>
+    <div><p>🔍 Deleted email recovery</p></div>
+    <div><p>🛡️ Data protection &amp; backup strategy</p></div>
+  </div>
+</section>
+
+<section class="band alt">
+  <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:30px">
+    <div><span style="font-size:24px">💰</span><p>Best Price Guarantee</p></div>
+    <div><span style="font-size:24px">⚡</span><p>Same-Day Repairs</p></div>
+    <div><span style="font-size:24px">🧑‍🔧</span><p>Expert Technicians</p></div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h3>What Our Customers Say</h3>
+  <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ “Recovered all my lost files in no time! Highly professional.” – Mark P.</div>
+  <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ “Thought my data was gone forever, but they saved it. Thank you!” – Julia W.</div>
+</section>
+
+<div class="qr">
+  <p>Scan &amp; Find Us</p>
+  <img src="qr-code.jpg" alt="QR Code">
+</div>
+
+<footer>© 2025 WiFi Accessories | Designed for tech-savvy customers.</footer>
+
+<!-- Promo -->
+<div id="promo-popup">
+  <h2>🎉 Special Promotion!</h2>
+  <p>Get 10% off on all device repairs this week only. Mention code <strong>WIFI10</strong> when you visit or book online.</p>
+  <button onclick="document.getElementById('promo-popup').style.display='none'">Close</button>
+</div>
+
+<!-- ===== JS ===== -->
+<script>
+  // Promo popup
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      var el = document.getElementById('promo-popup');
+      if(el) el.style.display = 'block';
+    }, 2000);
+  });
+
+  // Nav interactions (hamburger + accordion dropdowns)
+  (function(){
+    function ready(fn){ if(document.readyState!=='loading'){fn()} else {document.addEventListener('DOMContentLoaded',fn)} }
+    ready(function(){
+      var nav = document.querySelector('nav[data-nav="aboutus"]');
+      if(!nav) return;
+
+      var toggleBtn = nav.querySelector('.menu-toggle');
+      var links = nav.querySelector('.nav-links');
+
+      if(toggleBtn && links){
+        toggleBtn.addEventListener('click', function(){
+          links.classList.toggle('open');
+          toggleBtn.textContent = links.classList.contains('open') ? '✖' : '☰';
+        });
+      }
+
+      // Accordion for dropdowns (mobile)
+      var dropdowns = nav.querySelectorAll('.dropdown');
+      function closeAll(except){
+        dropdowns.forEach(function(dd){
+          var panel = dd.querySelector('.dropdown-content');
+          if(panel && panel !== except){ panel.style.display = 'none'; panel.classList.remove('open'); }
+        });
+      }
+      dropdowns.forEach(function(dd){
+        var trigger = dd.querySelector(':scope > .nav-link');
+        var panel = dd.querySelector('.dropdown-content');
+        if(!trigger || !panel) return;
+        trigger.addEventListener('click', function(e){
+          // Only toggle on small screens
+          if (window.matchMedia('(max-width: 768px)').matches){
+            e.preventDefault();
+            var isOpen = panel.style.display === 'block';
+            closeAll(panel);
+            panel.style.display = isOpen ? 'none' : 'block';
+          }
+        });
+      });
+
+      // Ensure "Device Repair" parent stays visually active since this is its child
+      var deviceRepairParent = nav.querySelector('.dropdown > .nav-link.active');
+      if(deviceRepairParent){
+        deviceRepairParent.setAttribute('aria-current','page');
+      }
+    });
+  })();
+</script>
+
+
+<script id="mobile-nav-fix-js-20251031">
+(function(){
+  function onReady(fn){
+    if(document.readyState !== 'loading') fn();
+    else document.addEventListener('DOMContentLoaded', fn);
+  }
+  onReady(function(){
+    var nav = document.querySelector('nav[data-nav="aboutus"]');
+    if(!nav) return;
+
+    var mq = window.matchMedia('(max-width: 768px)');
+    var links = nav.querySelector('.nav-links');
+    var toggleBtn = nav.querySelector('.menu-toggle');
+    if(toggleBtn && links){
+      toggleBtn.addEventListener('click', function(){
+        links.classList.toggle('open');
+        toggleBtn.textContent = links.classList.contains('open') ? '✖' : '☰';
+      });
+    }
+
+    var dropdowns = Array.prototype.slice.call(nav.querySelectorAll('.dropdown'));
+    function closeAll(exceptPanel){
+      dropdowns.forEach(function(dd){
+        var p = dd.querySelector('.dropdown-content');
+        if(p && p !== exceptPanel) p.classList.remove('show');
+      });
+    }
+
+    dropdowns.forEach(function(dd){
+      var trigger = dd.querySelector(':scope > .nav-link');
+      var panel = dd.querySelector('.dropdown-content');
+      if(!trigger || !panel) return;
+
+      trigger.addEventListener('click', function(e){
+        if(mq.matches){ // mobile only
+          e.preventDefault();
+          var willOpen = !panel.classList.contains('show');
+          closeAll(panel);
+          panel.classList.toggle('show', willOpen);
+        }
+      });
+    });
+
+    // When resizing from mobile -> desktop, ensure any mobile-open panels are reset
+    window.addEventListener('resize', function(){
+      if(!mq.matches){
+        dropdowns.forEach(function(dd){
+          var p = dd.querySelector('.dropdown-content');
+          if(p) p.classList.remove('show');
+        });
+        if(links) links.classList.remove('open');
+        if(toggleBtn) toggleBtn.textContent = '☰';
+      }
+    }, { passive: true });
+  });
+})();
+</script>
+
+
+<script id="mobile-nav-style-js-20251031b">
+(function(){
+  function ready(f){document.readyState!=="loading"?f():document.addEventListener("DOMContentLoaded",f);}
+  ready(function(){
+    var nav = document.querySelector('nav[data-nav="aboutus"]');
+    if(!nav) return;
+    var mq = window.matchMedia('(max-width: 768px)');
+    var dropdowns = Array.prototype.slice.call(nav.querySelectorAll('.dropdown'));
+    dropdowns.forEach(function(dd){
+      var trigger = dd.querySelector(':scope > .nav-link');
+      var panel = dd.querySelector('.dropdown-content');
+      if(!trigger || !panel) return;
+      trigger.addEventListener('click', function(e){
+        if(mq.matches){
+          e.preventDefault();
+          var nowOpen = !panel.classList.contains('show');
+          // close siblings
+          dropdowns.forEach(function(other){
+            if(other!==dd){
+              other.classList.remove('open');
+              var p = other.querySelector('.dropdown-content');
+              if(p) p.classList.remove('show');
+            }
+          });
+          panel.classList.toggle('show', nowOpen);
+          dd.classList.toggle('open', nowOpen);
+        }
+      });
+    });
+  });
+})();
+</script>
+
+
+<script id="mobile-nav-style-js-20251031e">
+(function(){
+  function ready(f){document.readyState!=='loading'?f():document.addEventListener('DOMContentLoaded',f);}
+  ready(function(){
+    var nav = document.querySelector('nav[data-nav="aboutus"]');
+    if(!nav) return;
+    var mq = window.matchMedia('(max-width: 768px)');
+    var dropdowns = Array.prototype.slice.call(nav.querySelectorAll('.dropdown'));
+    // Defensive: rebind tap even if other listeners exist
+    dropdowns.forEach(function(dd){
+      var trigger = dd.querySelector(':scope > .nav-link');
+      var panel = dd.querySelector('.dropdown-content');
+      if(!trigger || !panel) return;
+      trigger.addEventListener('click', function(e){
+        if(mq.matches){
+          e.preventDefault();
+          e.stopPropagation();
+          var willOpen = !panel.classList.contains('show');
+          // close siblings
+          dropdowns.forEach(function(other){
+            if(other!==dd){
+              other.classList.remove('open');
+              var p = other.querySelector('.dropdown-content');
+              if(p) p.classList.remove('show');
+            }
+          });
+          panel.classList.toggle('show', willOpen);
+          dd.classList.toggle('open', willOpen);
+        }
+      }, true);
+    });
+
+    // Close when tapping outside
+    document.addEventListener('click', function(){
+      if(!mq.matches) return;
+      dropdowns.forEach(function(dd){
+        dd.classList.remove('open');
+        var p = dd.querySelector('.dropdown-content');
+        if(p) p.classList.remove('show');
+      });
+    });
+    // Keep taps inside panel from bubbling to document
+    nav.addEventListener('click', function(e){
+      if(mq.matches && e.target.closest('.dropdown-content')){
+        e.stopPropagation();
+      }
+    });
+  });
+})();
+</script>
+
+
+<script id="mobile-nav-style-js-20251031f">
+(function(){
+  function ready(f){document.readyState!=='loading'?f():document.addEventListener('DOMContentLoaded',f);}
+  ready(function(){
+    var nav = document.querySelector('nav[data-nav="aboutus"]');
+    if(!nav) return;
+    var mq = window.matchMedia('(max-width: 768px)');
+
+    function q1(s){ return nav.querySelector(s); }
+    function qa(s){ return Array.prototype.slice.call(nav.querySelectorAll(s)); }
+
+    var links = q1('.nav-links');
+    var toggleBtn = q1('.menu-toggle');
+    if(toggleBtn && links){
+      toggleBtn.addEventListener('click', function(){
+        links.classList.toggle('open');
+        toggleBtn.textContent = links.classList.contains('open') ? '✖' : '☰';
+      });
+    }
+
+    var dropdowns = qa('.dropdown, [class*="drop"]');
+
+    function findTrigger(dd){
+      return dd.querySelector(':scope > .nav-link, :scope > a, :scope > button, :scope > .menu-link');
+    }
+    function findPanel(dd){
+      return dd.querySelector(':scope > .dropdown-content, :scope > .dropdown-menu, :scope > [class*="dropdown"][class*="content"], :scope > [class*="dropdown"][class*="menu"]')
+          || dd.querySelector('.dropdown-content, .dropdown-menu, [class*="dropdown"][class*="content"], [class*="dropdown"][class*="menu"]');
+    }
+
+    function closeAll(except){
+      dropdowns.forEach(function(d){
+        if(d===except) return;
+        d.classList.remove('open');
+        var p = findPanel(d);
+        if(p){ p.classList.remove('show'); p.style.display='none'; }
+      });
+    }
+
+    dropdowns.forEach(function(dd){
+      var trigger = findTrigger(dd);
+      var panel = findPanel(dd);
+      if(!trigger || !panel) return;
+
+      trigger.addEventListener('click', function(e){
+        if(!mq.matches) return;
+        e.preventDefault();
+        e.stopPropagation();
+        var willOpen = !panel.classList.contains('show');
+        closeAll(dd);
+        if(willOpen){
+          dd.classList.add('open');
+          panel.classList.add('show');
+          panel.style.display='block';
+        }else{
+          dd.classList.remove('open');
+          panel.classList.remove('show');
+          panel.style.display='none';
+        }
+      }, true);
+    });
+
+    // Close if clicking outside the nav on mobile
+    document.addEventListener('click', function(){
+      if(!mq.matches) return;
+      closeAll(null);
+    });
+    nav.addEventListener('click', function(e){
+      if(mq.matches && e.target.closest('.dropdown-content, .dropdown-menu, [class*=dropdown]')){
+        e.stopPropagation();
+      }
+    });
+    // Reset when leaving mobile
+    window.addEventListener('resize', function(){
+      if(!mq.matches){
+        closeAll(null);
+        if(links){ links.classList.remove('open'); }
+        if(toggleBtn){ toggleBtn.textContent='☰'; }
+      }
+    }, {passive:true});
+  });
+})();
+</script>
+
+
+<script id="mobile-nav-style-js-20251031g">
+(function(){
+  function ready(f){document.readyState!=='loading'?f():document.addEventListener('DOMContentLoaded',f);}
+  function closestClickable(el){
+    while(el && el !== document){
+      if(el.tagName==='BUTTON' || el.tagName==='A' || el.hasAttribute('role') || el.onclick){ return el; }
+      el = el.parentElement;
+    }
+    return null;
+  }
+  ready(function(){
+    var nav = document.querySelector('nav[data-nav="aboutus"]');
+    if(!nav) return;
+    var mq = window.matchMedia('(max-width: 768px)');
+    var links = nav.querySelector('.nav-links');
+
+    // Find a hamburger/toggle element robustly
+    var toggleBtn = nav.querySelector('.menu-toggle, .hamburger, .hamburger-btn, .menu-btn, .menu-button, .mobile-menu, .mobile-toggle, [data-toggle="menu"]');
+    if(!toggleBtn){
+      // common icon classes
+      var bars = nav.querySelector('.fa-bars, .bi-list, .icon-bars, .ri-menu-line, .gg-menu');
+      if(bars){
+        toggleBtn = closestClickable(bars) || bars;
+      }else{
+        // last resort: element that literally contains the hamburger symbol
+        var candidates = Array.prototype.slice.call(nav.querySelectorAll('*'));
+        candidates = candidates.filter(function(n){
+          return n.childElementCount===0 && /\u2630|☰/.test(n.textContent || '');
+        });
+        if(candidates[0]) toggleBtn = closestClickable(candidates[0]) || candidates[0];
+      }
+    }
+
+    function setOpen(open){
+      if(!links) return;
+      if(open){ links.classList.add('open'); }
+      else { links.classList.remove('open'); }
+    }
+
+    if(toggleBtn){
+      toggleBtn.addEventListener('click', function(e){
+        if(!mq.matches) return;
+        e.preventDefault();
+        e.stopPropagation();
+        var open = !links.classList.contains('open');
+        setOpen(open);
+        // Optional: swap text between ☰ and ✖ if text node
+        var t = (toggleBtn.textContent || '').trim();
+        
+      }, true);
+    }
+
+    // Close when tapping outside the nav while open
+    document.addEventListener('click', function(){
+      if(!mq.matches) return;
+      setOpen(false);
+    });
+    nav.addEventListener('click', function(e){
+      if(mq.matches && (e.target.closest('.nav-links') || e.target.closest('[class*="drop"]'))){
+        e.stopPropagation();
+      }
+    });
+
+    // Reset when leaving mobile breakpoint
+    window.addEventListener('resize', function(){
+      if(!mq.matches){ setOpen(true); } // show links on desktop
+    }, {passive:true});
+  });
+})();
+</script>
+
+
+<style id="mobile-dropdown-force-open-20251031">
+@media (max-width:768px){
+  /* If parent has .open, always show the submenu */
+  nav[data-nav="aboutus"] .dropdown.open > .dropdown-content,
+  nav[data-nav="aboutus"] .dropdown.open .dropdown-content{
+    display: block !important;
+  }
+}
+</style>
+
+
+<script id="mobile-dropdown-final-bind-20251031">
+(function(){
+  function ready(fn){document.readyState!=='loading'?fn():document.addEventListener('DOMContentLoaded',fn);}
+  ready(function(){
+    var nav = document.querySelector('nav[data-nav="aboutus"]');
+    if(!nav) return;
+    var mq = window.matchMedia('(max-width: 768px)');
+    var dropdowns = Array.prototype.slice.call(nav.querySelectorAll('.dropdown'));
+
+    function panelOf(dd){
+      return dd.querySelector(':scope > .dropdown-content') || dd.querySelector('.dropdown-content');
+    }
+    function closeAll(except){
+      dropdowns.forEach(function(d){
+        if(d===except) return;
+        d.classList.remove('open');
+        var p = panelOf(d);
+        if(p){ p.classList.remove('show'); p.style.display='none'; }
+      });
+    }
+
+    dropdowns.forEach(function(dd){
+      var trigger = dd.querySelector(':scope > .nav-link, :scope > a, :scope > button');
+      var panel = panelOf(dd);
+      if(!trigger || !panel) return;
+
+      // Remove any residual inline onclick that could navigate
+      trigger.removeAttribute('onclick');
+
+      trigger.addEventListener('click', function(e){
+        if(!mq.matches) return;            // desktop keeps hover behavior
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();      // win over earlier listeners
+
+        var willOpen = !dd.classList.contains('open');
+        closeAll(willOpen ? dd : null);
+
+        if(willOpen){
+          dd.classList.add('open');
+          panel.classList.add('show');
+          panel.style.display = 'block';
+        }else{
+          dd.classList.remove('open');
+          panel.classList.remove('show');
+          panel.style.display = 'none';
+        }
+      }, true);
+    });
+
+    // Tap outside closes all on mobile
+    document.addEventListener('click', function(){
+      if(!mq.matches) return;
+      closeAll(null);
+    }, true);
+
+    // Keep taps inside an open panel from closing it
+    nav.addEventListener('click', function(e){
+      if(mq.matches && e.target.closest('.dropdown-content')){
+        e.stopPropagation();
+      }
+    }, true);
+
+    // Reset state when leaving mobile breakpoint
+    window.addEventListener('resize', function(){
+      if(!mq.matches){
+        closeAll(null);
+      }
+    }, {passive:true});
+  });
+})();
+</script>
+
+
+<style id="mobile-dropdown-label-visibility-20251031">
+@media (max-width:768px){
+  /* Keep parent label always visible and above submenu */
+  nav[data-nav="aboutus"] .dropdown > .nav-link{
+    position: relative !important;
+    z-index: 2 !important;
+    color: #0f1c2d !important;
+    background: #ffffff !important;
+  }
+  nav[data-nav="aboutus"] .dropdown.open > .nav-link{
+    color: #0f1c2d !important;
+    background: #ffffff !important;
+  }
+  /* If something marks it active, still keep readable on white */
+  nav[data-nav="aboutus"] .nav-link.active{
+    background: #ffffff !important;
+    color: #0f1c2d !important;
+  }
+  /* Submenu sits underneath the label */
+  nav[data-nav="aboutus"] .dropdown .dropdown-content{
+    position: relative !important;
+    z-index: 1 !important;
+    margin-top: 6px !important;
+  }
+}
+</style>
+
+
+<script id="mobile-hamburger-keep-bars-20251031">
+(function(){
+  function ready(fn){document.readyState!=='loading'?fn():document.addEventListener('DOMContentLoaded',fn);}
+  ready(function(){
+    var nav = document.querySelector('nav[data-nav="aboutus"]');
+    if(!nav) return;
+    var mq = window.matchMedia('(max-width: 768px)');
+    var toggleBtn = nav.querySelector('.menu-toggle');
+    var links = nav.querySelector('.nav-links');
+    if(toggleBtn && links){
+      // Remove other listeners that flip to ✖ by re-binding last
+      toggleBtn.addEventListener('click', function(e){
+        if(!mq.matches) return;
+        // Always keep the icon as ☰
+        toggleBtn.textContent = '☰';
+      }, true);
+    }
+  });
+})();
+</script>
+
+
+<script id="mobile-dropdown-toggle-close-20251031" type="text/javascript">
+(function(){
+  function ready(fn){document.readyState!=='loading'?fn():document.addEventListener('DOMContentLoaded',fn);}
+  ready(function(){
+    var nav = document.querySelector('nav[data-nav="aboutus"]');
+    if(!nav) return;
+    var mq = window.matchMedia('(max-width: 768px)');
+    var dropdowns = Array.prototype.slice.call(nav.querySelectorAll('.dropdown'));
+
+    function panelOf(dd){
+      return dd.querySelector(':scope > .dropdown-content') || dd.querySelector('.dropdown-content');
+    }
+    function triggerOf(dd){
+      return dd.querySelector(':scope > .nav-link, :scope > a, :scope > button');
+    }
+    function setOpen(dd, open){
+      var panel = panelOf(dd);
+      if(!panel) return;
+      dd.classList.toggle('open', open);
+      panel.classList.toggle('show', open);
+      panel.style.display = open ? 'block' : 'none';
+      var trig = triggerOf(dd);
+      if(trig){
+        trig.setAttribute('aria-expanded', String(!!open));
+        trig.setAttribute('aria-haspopup', 'true');
+      }
+    }
+    function closeAll(except){
+      dropdowns.forEach(function(d){
+        if(except && d===except) return;
+        setOpen(d, false);
+      });
+    }
+
+    dropdowns.forEach(function(dd){
+      var trig = triggerOf(dd);
+      if(!trig) return;
+      // Neutralize inline onclicks or href navigation on mobile
+      trig.removeAttribute('onclick');
+      // Force href="#" to not navigate
+      if(trig.tagName === 'A' && (!trig.getAttribute('href') || trig.getAttribute('href') === '#')){
+        trig.setAttribute('href', 'javascript:void(0)');
+      }
+
+      // Capture-phase listener to override earlier bindings
+      trig.addEventListener('click', function(e){
+        if(!mq.matches) return;       // desktop uses hover
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+
+        var isOpen = dd.classList.contains('open');
+        if(isOpen){
+          // Close the same dropdown on second tap
+          setOpen(dd, false);
+        }else{
+          // Close others, then open this one
+          closeAll(null);
+          setOpen(dd, true);
+        }
+      }, true);
+    });
+
+    // Taps inside the submenu should not bubble out to document
+    nav.addEventListener('click', function(e){
+      if(mq.matches && e.target.closest('.dropdown-content')){
+        e.stopPropagation();
+      }
+    }, true);
+
+    // Tap outside closes everything
+    document.addEventListener('click', function(){
+      if(!mq.matches) return;
+      closeAll(null);
+    }, true);
+
+    // On resize to desktop, reset state
+    window.addEventListener('resize', function(){
+      if(!mq.matches){
+        closeAll(null);
+      }
+    }, {passive:true});
+  });
+})();
+</script>
+
+
+<script id="mobile-dropdown-hard-reset-20251031">
+(function(){
+  function ready(fn){document.readyState!=='loading'?fn():document.addEventListener('DOMContentLoaded',fn);}
+  ready(function(){
+    // Run after other scripts bind, then hard-reset triggers
+    setTimeout(function(){
+      var nav = document.querySelector('nav[data-nav="aboutus"]');
+      if(!nav) return;
+      var mq = window.matchMedia('(max-width: 768px)');
+      var dropdowns = Array.prototype.slice.call(nav.querySelectorAll('.dropdown'));
+
+      function panelOf(dd){
+        return dd.querySelector(':scope > .dropdown-content') || dd.querySelector('.dropdown-content');
+      }
+      function triggerOf(dd){
+        return dd.querySelector(':scope > .nav-link, :scope > a, :scope > button');
+      }
+      function setOpen(dd, open){
+        var panel = panelOf(dd);
+        dd.classList.toggle('open', !!open);
+        if(panel){
+          panel.classList.toggle('show', !!open);
+          panel.style.display = open ? 'block' : 'none';
+        }
+        var t = triggerOf(dd);
+        if(t){
+          t.setAttribute('aria-expanded', String(!!open));
+          t.setAttribute('aria-haspopup', 'true');
+        }
+      }
+      function closeAll(except){
+        dropdowns.forEach(function(d){
+          if(except && d===except) return;
+          setOpen(d, false);
+        });
+      }
+
+      dropdowns.forEach(function(dd){
+        var trig = triggerOf(dd);
+        if(!trig) return;
+
+        // Neutralize href and inline onclick
+        trig.removeAttribute('onclick');
+        if(trig.tagName === 'A' && (!trig.getAttribute('href') || trig.getAttribute('href') === '#')){
+          trig.setAttribute('href', 'javascript:void(0)');
+        }
+
+        // Strip ALL previous listeners by cloning
+        var clone = trig.cloneNode(true);
+        trig.parentNode.replaceChild(clone, trig);
+        trig = clone;
+
+        function toggleHandler(e){
+          if(!mq.matches) return; // desktop uses hover
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+          var isOpen = dd.classList.contains('open');
+          if(isOpen){
+            setOpen(dd, false);
+          }else{
+            closeAll(dd);
+            setOpen(dd, true);
+          }
+        }
+
+        // Fast tap response
+        trig.addEventListener('pointerdown', toggleHandler, true);
+        // Fallback click
+        trig.addEventListener('click', toggleHandler, true);
+      });
+
+      // Inside submenu shouldn't close
+      nav.addEventListener('click', function(e){
+        if(mq.matches && e.target.closest('.dropdown-content')){
+          e.stopPropagation();
+        }
+      }, true);
+
+      // Outside tap closes all
+      document.addEventListener('click', function(){
+        if(!mq.matches) return;
+        closeAll(null);
+      }, true);
+
+      // Reset on resize
+      window.addEventListener('resize', function(){
+        if(!mq.matches){
+          closeAll(null);
+        }
+      }, {passive:true});
+    }, 0);
+  });
+})();
+</script>
+
+
+<script id="mobile-dropdown-skip-click-20251031">
+(function(){
+  function ready(fn){document.readyState!=='loading'?fn():document.addEventListener('DOMContentLoaded',fn);}
+  ready(function(){
+    var nav = document.querySelector('nav[data-nav="aboutus"]');
+    if(!nav) return;
+    var mq = window.matchMedia('(max-width: 768px)');
+    var dropdowns = Array.prototype.slice.call(nav.querySelectorAll('.dropdown'));
+
+    function panelOf(dd){
+      return dd.querySelector(':scope > .dropdown-content') || dd.querySelector('.dropdown-content');
+    }
+    function triggerOf(dd){
+      return dd.querySelector(':scope > .nav-link, :scope > a, :scope > button');
+    }
+    function setOpen(dd, open){
+      var panel = panelOf(dd);
+      dd.classList.toggle('open', !!open);
+      if(panel){
+        panel.classList.toggle('show', !!open);
+        panel.style.display = open ? 'block' : 'none';
+      }
+      var t = triggerOf(dd);
+      if(t){
+        t.setAttribute('aria-expanded', String(!!open));
+        t.setAttribute('aria-haspopup', 'true');
+      }
+    }
+    function closeAll(except){
+      dropdowns.forEach(function(d){
+        if(except && d===except) return;
+        setOpen(d, false);
+      });
+    }
+
+    dropdowns.forEach(function(dd){
+      var trig = triggerOf(dd);
+      if(!trig) return;
+
+      // Neutralize href / onclick for mobile use
+      trig.removeAttribute('onclick');
+      if(trig.tagName === 'A' && (!trig.getAttribute('href') || trig.getAttribute('href') === '#')){
+        trig.setAttribute('href', 'javascript:void(0)');
+      }
+
+      function toggle(){
+        var isOpen = dd.classList.contains('open');
+        if(isOpen){
+          setOpen(dd, false);
+        }else{
+          closeAll(dd);
+          setOpen(dd, true);
+        }
+      }
+
+      // pointerdown toggles and sets a flag to ignore the following click
+      trig.addEventListener('pointerdown', function(e){
+        if(!mq.matches) return;
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        toggle();
+        // ignore the synthetic click that follows
+        trig.dataset.skipClick = "1";
+        setTimeout(function(){ delete trig.dataset.skipClick; }, 350);
+      }, true);
+
+      // click handler only runs when there was no pointerdown
+      trig.addEventListener('click', function(e){
+        if(!mq.matches) return;
+        if(trig.dataset.skipClick === "1"){ // consumed by pointerdown
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+          return;
+        }
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        toggle();
+      }, true);
+    });
+
+    // keep taps inside submenu local
+    nav.addEventListener('click', function(e){
+      if(mq.matches && e.target.closest('.dropdown-content')){
+        e.stopPropagation();
+      }
+    }, true);
+
+    // tap outside closes all
+    document.addEventListener('click', function(){
+      if(!mq.matches) return;
+      closeAll(null);
+    }, true);
+
+    // reset when switching to desktop
+    window.addEventListener('resize', function(){
+      if(!mq.matches){
+        closeAll(null);
+      }
+    }, {passive:true});
+  });
+})();
+</script>
+
+
+<script id="mobile-dropdown-touchend-toggle-20251031">
+(function(){
+  function ready(fn){document.readyState!=='loading'?fn():document.addEventListener('DOMContentLoaded',fn);}
+  ready(function(){
+    var nav = document.querySelector('nav[data-nav="aboutus"]');
+    if(!nav) return;
+    var mq = window.matchMedia('(max-width: 768px)');
+    var dropdowns = Array.prototype.slice.call(nav.querySelectorAll('.dropdown'));
+
+    function isMobile(){ return mq.matches; }
+    function panelOf(dd){ return dd.querySelector(':scope > .dropdown-content') || dd.querySelector('.dropdown-content'); }
+    function triggerOf(dd){ return dd.querySelector(':scope > .nav-link, :scope > a, :scope > button'); }
+    function setOpen(dd, open){
+      var panel = panelOf(dd);
+      dd.classList.toggle('open', !!open);
+      if(panel){
+        panel.classList.toggle('show', !!open);
+        panel.style.display = open ? 'block' : 'none';
+      }
+      var t = triggerOf(dd);
+      if(t){
+        t.setAttribute('aria-expanded', String(!!open));
+        t.setAttribute('aria-haspopup', 'true');
+      }
+    }
+    function closeAll(except){
+      dropdowns.forEach(function(d){
+        if(except && d===except) return;
+        setOpen(d, false);
+      });
+    }
+
+    dropdowns.forEach(function(dd){
+      var trig = triggerOf(dd);
+      if(!trig) return;
+
+      // Neutralize navigation on mobile
+      trig.removeAttribute('onclick');
+      if(trig.tagName === 'A' && (!trig.getAttribute('href') || trig.getAttribute('href') === '#')){
+        trig.setAttribute('href', 'javascript:void(0)');
+      }
+
+      // Clone to purge all existing listeners
+      var clone = trig.cloneNode(true);
+      trig.parentNode.replaceChild(clone, trig);
+      trig = clone;
+
+      function toggle(e){
+        if(!isMobile()) return;
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        var willOpen = !dd.classList.contains('open');
+        if(willOpen){
+          closeAll(dd);
+          setOpen(dd, true);
+        }else{
+          setOpen(dd, false);
+        }
+      }
+
+      // Use touchend for instant, reliable taps on mobile
+      trig.addEventListener('touchend', toggle, { capture: true, passive: false });
+      // Fallback for mouse users on small screens
+      trig.addEventListener('click', function(e){
+        if(!isMobile()) return;
+        // If there was a touch, click may still fire; ignore it.
+        if(e.sourceCapabilities && e.sourceCapabilities.firesTouchEvents){
+          e.preventDefault();
+          return;
+        }
+        toggle(e);
+      }, true);
+    });
+
+    // Keep interactions inside panel from bubbling out
+    nav.addEventListener('touchend', function(e){
+      if(isMobile() && e.target.closest('.dropdown-content')){
+        e.stopPropagation();
+      }
+    }, { capture: true, passive: false });
+    nav.addEventListener('click', function(e){
+      if(isMobile() && e.target.closest('.dropdown-content')){
+        e.stopPropagation();
+      }
+    }, true);
+
+    // Tap/click outside closes all
+    document.addEventListener('touchend', function(){
+      if(!isMobile()) return;
+      closeAll(null);
+    }, { capture: true, passive: true });
+    document.addEventListener('click', function(){
+      if(!isMobile()) return;
+      closeAll(null);
+    }, true);
+
+    // Reset when switching to desktop
+    window.addEventListener('resize', function(){
+      if(!isMobile()){
+        closeAll(null);
+      }
+    }, { passive: true });
+  });
+})();
+</script>
+
+
+<script id="mobile-dropdown-checkbox-bind-20251031">
+(function(){
+  function ready(fn){document.readyState!=='loading'?fn():document.addEventListener('DOMContentLoaded',fn);}
+  ready(function(){
+    var nav = document.querySelector('nav[data-nav="aboutus"]');
+    if(!nav) return;
+    var mq = window.matchMedia('(max-width: 768px)');
+    var dropdowns = Array.prototype.slice.call(nav.querySelectorAll('.dropdown'));
+    var uid = 0;
+
+    function isMobile(){ return mq.matches; }
+
+    function closeAll(except){
+      dropdowns.forEach(function(dd){
+        if(except && dd===except) return;
+        var cb = dd.querySelector(':scope > .dd-toggle');
+        if(cb) cb.checked = false;
+      });
+    }
+
+    // Install checkboxes
+    dropdowns.forEach(function(dd){
+      var link = dd.querySelector(':scope > .nav-link, :scope > a');
+      var panel = dd.querySelector(':scope > .dropdown-content');
+      if(!link || !panel) return;
+
+      // Create hidden checkbox
+      var cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.className = 'dd-toggle';
+      cb.id = 'ddtog-'+(++uid);
+      dd.insertBefore(cb, link);
+
+      // Make link act as a toggle on mobile
+      link.addEventListener('click', function(e){
+        if(!isMobile()) return;  // desktop uses hover
+        e.preventDefault();
+        e.stopPropagation();
+        // Close others, then toggle this one
+        var willOpen = !cb.checked;
+        closeAll(dd);
+        cb.checked = willOpen;
+        // Reflect state for a11y
+        link.setAttribute('aria-expanded', String(willOpen));
+        link.setAttribute('aria-controls', cb.id+'-panel');
+      }, true);
+
+      // Assign aria-controls to panel
+      panel.setAttribute('id', cb.id+'-panel');
+    });
+
+    // Close on outside tap/click
+    document.addEventListener('click', function(e){
+      if(!isMobile()) return;
+      if(!nav.contains(e.target)){
+        closeAll(null);
+      }
+    }, true);
+
+    // Reset when leaving mobile
+    window.addEventListener('resize', function(){
+      if(!isMobile()){
+        closeAll(null);
+      }
+    }, {passive:true});
+  });
+})();
+</script>
+
+
+<script id="mobile-open-delegate-20251031">
+(function(){
+  function ready(fn){document.readyState!=='loading'?fn():document.addEventListener('DOMContentLoaded',fn);}
+  ready(function(){
+    var nav = document.querySelector('nav[data-nav="aboutus"]');
+    if(!nav) return;
+    var mq = window.matchMedia('(max-width: 768px)');
+
+    function isDropdownTrigger(el){
+      if(!el) return null;
+      var trigger = el.closest && el.closest('.dropdown > .nav-link, .dropdown > a, .dropdown > button');
+      return trigger;
+    }
+    function ddOfTrigger(trigger){
+      if(!trigger) return null;
+      return trigger.parentElement && trigger.parentElement.classList.contains('dropdown') ? trigger.parentElement : trigger.closest('.dropdown');
+    }
+    function closeSiblings(dd){
+      var siblings = dd && dd.parentElement ? Array.prototype.slice.call(dd.parentElement.children) : [];
+      siblings.forEach(function(n){
+        if(n!==dd && n.classList && n.classList.contains('dropdown')){
+          n.classList.remove('mobile-open');
+          var t = n.querySelector(':scope > .nav-link, :scope > a, :scope > button');
+          if(t){ t.setAttribute('aria-expanded','false'); }
+        }
+      });
+    }
+    function closeAll(){
+      Array.prototype.forEach.call(nav.querySelectorAll('.dropdown.mobile-open'), function(n){
+        n.classList.remove('mobile-open');
+        var t = n.querySelector(':scope > .nav-link, :scope > a, :scope > button');
+        if(t){ t.setAttribute('aria-expanded','false'); }
+      });
+    }
+
+    // Capture-phase delegated click: toggles the clicked dropdown
+    nav.addEventListener('click', function(e){
+      if(!mq.matches) return; // desktop unaffected
+      var trigger = isDropdownTrigger(e.target);
+      if(!trigger) return;
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+
+      // Neutralize accidental navigation-only anchors on mobile
+      if(trigger.tagName === 'A' && (!trigger.getAttribute('href') || trigger.getAttribute('href') === '#')){
+        trigger.setAttribute('href','javascript:void(0)');
+      }
+
+      var dd = ddOfTrigger(trigger);
+      if(!dd) return;
+      var willOpen = !dd.classList.contains('mobile-open');
+      // Close others first
+      closeSiblings(dd);
+      if(willOpen){
+        dd.classList.add('mobile-open');
+        trigger.setAttribute('aria-expanded','true');
+      }else{
+        dd.classList.remove('mobile-open');
+        trigger.setAttribute('aria-expanded','false');
+      }
+    }, true); // capture so we override earlier listeners first
+
+    // Taps/clicks inside dropdown-content should not bubble out of nav
+    nav.addEventListener('click', function(e){
+      if(!mq.matches) return;
+      if(e.target.closest('.dropdown-content')){
+        e.stopPropagation();
+      }
+    }, true);
+
+    // Clicking outside nav closes all
+    document.addEventListener('click', function(e){
+      if(!mq.matches) return;
+      if(!nav.contains(e.target)){
+        closeAll();
+      }
+    }, true);
+
+    // Reset on resize to desktop
+    window.addEventListener('resize', function(){
+      if(!mq.matches){
+        closeAll();
+      }
+    }, {passive:true});
+  });
+})();
+</script>
+
+
+<script id="remove-dd-toggle-20251031">
+(function(){
+  function ready(fn){document.readyState!=='loading'?fn():document.addEventListener('DOMContentLoaded',fn);}
+  ready(function(){
+    // Remove any dd-toggle inputs that may have been injected by older versions
+    document.querySelectorAll('nav[data-nav="aboutus"] .dd-toggle').forEach(function(el){
+      try{ el.parentNode && el.parentNode.removeChild(el); }catch(e){}
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
