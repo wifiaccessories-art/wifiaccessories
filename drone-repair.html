@@ -909,7 +909,7 @@ header h2 {
 <div class="nav-links">
 <a class="nav-link" href="index.html">Home</a>
 <div class="dropdown" style="position: relative;">
-<a class="nav-link active" href="#" style="cursor:pointer;">Device Repair ▾</a>
+<a class="nav-link" href="#" style="cursor:pointer;">Device Repair ▾</a>
 <div class="dropdown-content">
 <a class="nav-link" href="phone-repair.html">📞 Phone Repair</a>
 <a class="nav-link" href="tablet-repair.html">📱 Tablet Repair</a>
@@ -1096,6 +1096,52 @@ header h2 {
       document.getElementById('promo-popup').style.display = 'block';
     }, 2000);
   });
+</script>
+   <script>
+(function () {
+  const path = window.location.pathname;
+
+  // Find the "Device Repair ▾" tab
+  const repairTab = [...document.querySelectorAll('nav .nav-links > .dropdown > .nav-link')]
+    .find(a => a.textContent.trim().startsWith('Device Repair'));
+
+  // List of all device repair pages
+  const repairPages = [
+    'phone-repair', 'tablet-repair', 'laptop-repair', 'desktop-repair',
+    'printer-repair', 'smartwatch-repair', 'smart-glasses-repair',
+    'gaming-consoles-repair', 'device-trade', 'smart-accessories',
+    'drone-repair', 'data-recovery'
+  ];
+
+  // All top-level nav tabs
+  const topTabs = document.querySelectorAll(
+    'nav .nav-links > .nav-link, nav .nav-links > .dropdown > .nav-link'
+  );
+
+  if (!repairTab) return;
+
+  const setActive   = () => repairTab.classList.add('active');
+  const clearActive = () => repairTab.classList.remove('active');
+
+  // Highlight only on Device Repair pages
+  if (!repairPages.some(p => path.includes(p))) return;
+  setActive();
+
+  // Temporarily remove when hovering another tab
+  topTabs.forEach(tab => {
+    tab.addEventListener('mouseenter', clearActive);
+    tab.addEventListener('focus', clearActive);
+  });
+
+  // Restore when cursor leaves nav
+  const nav = document.querySelector('nav');
+  if (nav) nav.addEventListener('mouseleave', setActive);
+
+  // Always active on mobile (no hover)
+  const mm = window.matchMedia('(max-width: 768px)');
+  const handleMobile = e => { if (e.matches) setActive(); };
+  mm.addEventListener('change', handleMobile);
+})();
 </script>
 </body>
 </html>
