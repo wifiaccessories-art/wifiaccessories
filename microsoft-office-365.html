@@ -891,7 +891,7 @@
 <a class="nav-link" href="device-trade.html" style="display: block; padding: 10px 16px; font-size: 16px; line-height: 1.6;">🔄 Device Trade</a>
 <a class="nav-link" href="printer-repair.html" style="display: block; padding: 10px 16px; font-size: 16px; line-height: 1.6;">🖨️ Printer Repair</a></div>
 </div><div class="dropdown" style="position: relative;">
-<a aria-expanded="false" aria-haspopup="true" class="nav-link active" href="#" style="cursor:pointer;">
+<a aria-expanded="false" aria-haspopup="true" class="nav-link" href="#" style="cursor:pointer;">
         IT Solutions ▾
       </a>
 <div class="dropdown-content" style="display: none; position: absolute; background: #ffffff; color: #0f1c2d; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 1000; min-width: 200px; border-radius: 6px;"><a class="nav-link" href="web-design-development.html" style="display: block; padding: 10px 16px;">🌐 Web Design &amp; Development</a><a class="nav-link" href="cloud-solutions.html" style="display: block; padding: 10px 16px;">☁️ Cloud Solutions</a><a class="nav-link" href="network-security.html" style="display: block; padding: 10px 16px;">🛡️ Network Security</a><a class="nav-link" href="it-consulting.html" style="display: block; padding: 10px 16px;">🧠 IT Consulting</a><a class="nav-link" href="dark-web-scan.html" style="display: block; padding: 10px 16px;">🕵️‍♂️ Dark Web Scan</a><a class="nav-link" href="hosted-services.html" style="display: block; padding: 10px 16px;">📦 Hosted Services</a><a class="nav-link" href="disaster-recovery-backup.html" style="display: block; padding: 10px 16px;">🛡️ Disaster Recovery &amp; Backup</a><a class="nav-link" href="managed-it-services.html" style="display: block; padding: 10px 16px;">🖥️ Managed IT Services</a><a aria-current="page" class="nav-link inactive" href="microsoft-office-365.html" style="display: block; padding: 10px 16px;">📦 Microsoft Office 365</a></div>
@@ -1085,6 +1085,41 @@ We help you unlock the full potential of Word, Excel, Outlook, Teams, SharePoint
   window.addEventListener('resize', function(){
     if(!isMobile()){ closeAllDropdowns(); closeMenu(); if (menuBtn) { menuBtn.textContent = '☰'; menuBtn.setAttribute('aria-expanded','false'); } }
   });
+})();
+</script>
+   <script>
+(function () {
+  // Find the “IT Solutions ▾” top-level tab
+  const itTab = [...document.querySelectorAll('nav .nav-links > .dropdown > .nav-link')]
+    .find(a => a.textContent.trim().startsWith('IT Solutions'));
+
+  // All top-level tabs (Home, Device Repair, IT Solutions, About, Contact, Book…)
+  const topTabs = document.querySelectorAll(
+    'nav .nav-links > .nav-link, nav .nav-links > .dropdown > .nav-link'
+  );
+
+  if (!itTab) return;
+
+  const setActive   = () => itTab.classList.add('active');
+  const clearActive = () => itTab.classList.remove('active');
+
+  // On page load, make IT Solutions active
+  setActive();
+
+  // When hovering/focusing any top tab, temporarily remove the active state
+  topTabs.forEach(tab => {
+    tab.addEventListener('mouseenter', clearActive);
+    tab.addEventListener('focus', clearActive);
+  });
+
+  // When the cursor leaves the whole nav, restore IT Solutions highlight
+  const nav = document.querySelector('nav');
+  if (nav) nav.addEventListener('mouseleave', setActive);
+
+  // Keep things simple on mobile: always show IT Solutions as active
+  const mm = window.matchMedia('(max-width: 768px)');
+  const handleMobile = e => { if (e.matches) setActive(); };
+  mm.addEventListener('change', handleMobile);
 })();
 </script>
 </body></html>
