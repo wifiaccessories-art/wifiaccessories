@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta content="Fast and professional repair services for phones, tablets, laptops, and more in Niagara Falls. Book a same-day repair online." name="description"/>
@@ -852,7 +853,6 @@ section {
   }
 }
 </style>
-
 <!-- NEW: Mobile booking form improvements (drop-in overrides) -->
 <style>
 /* --- Mobile booking form improvements --- */
@@ -905,7 +905,6 @@ section {
   }
 }
 </style>
-
 <script defer="" src="https://apps.elfsight.com/p/platform.js">
 </script>
 <style>
@@ -993,7 +992,6 @@ nav[data-nav="aboutus"] .dropdown-content.show{display:block !important}
 }
 header h2{ margin-bottom: 12px !important; }
 </style>
-
 <style id="nav-zfix">nav[data-nav="aboutus"] .dropdown-content{z-index:10000 !important}</style>
 <style id="tagline-one-line-fix">
 @media (max-width: 768px){
@@ -1019,7 +1017,6 @@ header h2 {
   display: inline-block !important;
 }
 </style>
-
 <style id="mobile-call-align-fix">
 @media (max-width: 768px){
   nav[data-nav="aboutus"] .nav-links .mobile-only{
@@ -1043,6 +1040,170 @@ header h2 {
     content: "📞";
     font-size: 20px;
     margin-right: 6px;
+  }
+}
+</style>
+<style id="wa-global-qr-styles">
+
+/* The homepage Google Maps QR design, shared on service and information pages. */
+.wa-global-qr-section{background:#fff!important;color:#0f1c2d!important;padding:35px 18px 42px!important;text-align:center!important;box-sizing:border-box;width:100%;max-width:100%;overflow:hidden}
+.wa-global-qr-section *{box-sizing:border-box}
+.wa-global-qr-section .wa-contact-map-card{max-width:430px;width:100%;margin:0 auto;padding:27px 24px 25px;border-radius:20px;border:1px solid #e6eaf0;box-shadow:0 10px 30px rgba(15,28,45,.07);background:#fff;text-align:center;min-width:0}
+.wa-global-qr-section .wa-contact-map-icon{display:flex;align-items:center;justify-content:center;color:#f28c28;background:#fff2e5;width:48px;height:48px;border-radius:50%;margin:0 auto 12px}
+.wa-global-qr-section .wa-contact-map-icon svg{width:24px;height:24px}
+.wa-global-qr-section .wa-contact-map-card h3{font:800 23px/1.26 Roboto,Arial,sans-serif!important;color:#0f1c2d!important;margin:0 0 9px!important;text-align:center!important}
+.wa-global-qr-section .wa-contact-map-card p{font:400 15px/1.5 Roboto,Arial,sans-serif!important;color:#637186!important;margin:0 auto 18px!important;max-width:315px;text-align:center!important}
+.wa-global-qr-section .wa-contact-qr-link{display:block;width:max-content;max-width:100%;margin:0 auto 18px!important;border-radius:14px;padding:9px!important;border:1px solid #e5eaf0;background:#fff;box-shadow:0 4px 15px rgba(15,28,45,.07);text-decoration:none!important}
+.wa-global-qr-section .wa-contact-qr-link img{display:block!important;width:184px!important;height:184px!important;max-width:100%!important;object-fit:contain;border:0!important;border-radius:0!important;margin:0!important}
+.wa-global-qr-section .wa-contact-direction-button{display:inline-flex!important;align-items:center;justify-content:center;gap:10px;padding:12px 24px!important;margin:0!important;border-radius:9px!important;background:#0f1c2d!important;color:#fff!important;font:700 16px/1.4 Roboto,Arial,sans-serif!important;text-decoration:none!important;min-height:47px!important;width:auto!important;max-width:100%;box-shadow:none!important}
+.wa-global-qr-section a:focus-visible{outline:3px solid #f28c28!important;outline-offset:3px}
+/* Keep QR links completely steady, as on the current homepage. */
+.wa-global-qr-section,.wa-global-qr-section *,.wa-global-qr-section *::before,.wa-global-qr-section *::after{animation:none!important;transition:none!important;transform:none!important}
+@media(max-width:480px){.wa-global-qr-section{padding:23px 12px 30px!important}.wa-global-qr-section .wa-contact-map-card{padding:22px 14px}.wa-global-qr-section .wa-contact-map-card h3{font-size:21px!important}}
+
+</style>
+<style id="wa-promotion-sheet-styles">
+
+/* Standalone promotion dialog: no changes to homepage layout or review widget. */
+#wa-promo-dialog{position:fixed;border:0;width:min(510px,calc(100vw - 28px));max-width:calc(100vw - 28px);max-height:calc(100dvh - 24px);margin:auto;padding:0;border-radius:22px;overflow:auto;background:#fff;color:#0f1c2d;box-shadow:0 25px 75px rgba(5,18,36,.39);box-sizing:border-box;text-align:center}
+#wa-promo-dialog::backdrop{background:rgba(8,19,35,.72)}
+#wa-promo-dialog *,#wa-promo-dialog *::before,#wa-promo-dialog *::after{box-sizing:border-box}
+#wa-promo-dialog .wa-promo-head{position:relative;padding:37px 54px 32px;background:linear-gradient(135deg,#0f1c2d 0%,#213d5e 72%,#34486a 100%);border-bottom:5px solid #f28c28}
+#wa-promo-dialog .wa-promo-head::after{content:"";position:absolute;left:calc(50% - 26px);bottom:-12px;border-left:13px solid transparent;border-right:13px solid transparent;border-top:12px solid #f28c28}
+#wa-promo-dialog .wa-promo-title{font:900 clamp(25px,5.5vw,34px)/1.2 Roboto,Arial,sans-serif!important;letter-spacing:.4px;text-align:center;color:#ffe1aa!important;margin:0!important;overflow-wrap:anywhere;text-shadow:0 0 8px rgba(255,200,100,.25);animation:waPromoFlash 2s ease-in-out infinite}
+#wa-promo-dialog .wa-promo-close{position:absolute;z-index:2;top:10px;right:12px;display:grid;place-items:center;width:38px;height:38px;padding:0!important;margin:0!important;line-height:1;border:1px solid rgba(255,255,255,.4);border-radius:50%;background:rgba(255,255,255,.10);color:#fff;font-size:26px;cursor:pointer}
+#wa-promo-dialog .wa-promo-close:hover{background:rgba(255,255,255,.22)}
+#wa-promo-dialog .wa-promo-body{padding:33px 31px 30px;text-align:center;background:linear-gradient(145deg,#fff 0%,#fff9ef 100%)}
+#wa-promo-dialog .wa-promo-message{display:block;margin:0 0 18px!important;padding:8px 2px;color:#233954;font:700 clamp(17px,3.7vw,21px)/1.6 Roboto,Arial,sans-serif!important;white-space:pre-line;overflow-wrap:anywhere;text-align:center}
+#wa-promo-dialog .wa-promo-code{display:block;width:fit-content;max-width:100%;margin:0 auto 24px;padding:11px 20px;border-radius:12px;border:2px dashed #e28b2d;background:#fff0d9;color:#73400a;font-size:16px;font-weight:700;overflow-wrap:anywhere}
+#wa-promo-dialog .wa-promo-code strong{color:#8b3c00;font-size:19px;letter-spacing:.8px;overflow-wrap:anywhere}
+#wa-promo-dialog .wa-promo-cta{display:flex;align-items:center;justify-content:center;min-height:52px;width:100%;padding:13px 20px!important;margin:0!important;background:#f28c28;border:0;border-radius:11px;color:#142438!important;font:900 18px/1.2 Roboto,Arial,sans-serif!important;text-decoration:none;text-align:center;box-shadow:0 5px 12px rgba(242,140,40,.22);transition:background .16s ease}
+#wa-promo-dialog .wa-promo-cta:hover{background:#ff9d42}
+#wa-promo-dialog :focus-visible{outline:3px solid #ffab50;outline-offset:3px}
+#wa-promo-dialog [hidden]{display:none!important}
+@keyframes waPromoFlash{0%,100%{color:#ffe1aa;text-shadow:0 0 7px rgba(250,155,52,.25);opacity:1}50%{color:#ffffff;text-shadow:0 0 22px rgba(255,205,105,.8);opacity:.76}}
+@media(max-width:480px){#wa-promo-dialog .wa-promo-head{padding:38px 49px 26px}#wa-promo-dialog .wa-promo-body{padding:25px 20px}#wa-promo-dialog .wa-promo-code strong{font-size:17px}}
+@media(prefers-reduced-motion:reduce){#wa-promo-dialog .wa-promo-title{animation:none}#wa-promo-dialog .wa-promo-cta{transition:none}}
+
+</style>
+<style id="wa-contact-directions-styles">
+
+/* WiFi Accessories – enhanced contact/directions section; scoped to avoid other pages and reviews */
+#contact.wa-contact-directions {
+  background: linear-gradient(180deg,#fff 0%,#f8fafc 100%) !important;
+  color:#0f1c2d !important;
+  padding:55px 24px 58px !important;
+  text-align:left !important;
+}
+#contact .wa-contact-layout {
+  max-width:1120px;
+  margin:0 auto;
+  display:grid !important;
+  grid-template-columns:minmax(0,1.14fr) minmax(315px,.86fr);
+  align-items:center;
+  gap:50px;
+}
+#contact .wa-contact-info{min-width:0}
+#contact .wa-contact-eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#9c642e;margin:0 0 6px}
+#contact #wa-contact-title{color:#f28c28 !important;font-size:38px !important;font-weight:800;line-height:1.15;margin:0 0 10px !important;text-align:left}
+#contact .wa-contact-intro{font-size:16px;line-height:1.55;color:#637186;margin:0 0 21px;max-width:510px}
+#contact .wa-contact-rows{display:flex;flex-direction:column;gap:9px}
+#contact .wa-contact-row{
+ display:flex;align-items:center;gap:15px;padding:10px 12px 10px 10px;min-height:61px;
+ background:#fff;color:#0f1c2d;text-decoration:none;border:1px solid #e6ebf0;border-radius:12px;
+ box-shadow:0 2px 5px rgba(15,28,45,.02);
+}
+#contact .wa-contact-row:focus-visible,#contact .wa-contact-qr-link:focus-visible,#contact .wa-contact-direction-button:focus-visible{outline:3px solid #f28c28;outline-offset:3px}
+#contact .wa-contact-icon{display:flex;align-items:center;justify-content:center;flex:0 0 43px;width:43px;height:43px;border-radius:10px;background:#fff2e5;color:#e87917}
+#contact .wa-contact-icon svg{width:21px;height:21px}
+#contact .wa-contact-row-text{min-width:0;display:flex;flex-direction:column;gap:3px;flex:1}
+#contact .wa-contact-row-label{font-size:12px;font-weight:700;color:#69778a;line-height:1.2}
+#contact .wa-contact-row-value{font-size:18px;font-weight:650;color:#0f1c2d;line-height:1.4;overflow-wrap:anywhere}
+#contact .wa-contact-row-arrow{font-size:18px;line-height:1;color:#a4afbb;margin-left:auto}
+#contact .wa-contact-map-card{padding:27px 24px 25px;border-radius:20px;border:1px solid #e6eaf0;box-shadow:0 10px 30px rgba(15,28,45,.07);background:#fff;text-align:center;min-width:0}
+#contact .wa-contact-map-icon{display:flex;align-items:center;justify-content:center;color:#f28c28;background:#fff2e5;width:48px;height:48px;border-radius:50%;margin:0 auto 12px}
+#contact .wa-contact-map-icon svg{width:24px;height:24px}
+#contact .wa-contact-map-card h3{font-size:23px !important;line-height:1.26;color:#0f1c2d;margin:0 0 9px;font-weight:800}
+#contact .wa-contact-map-card p{font-size:15px;line-height:1.5;color:#637186;margin:0 auto 18px;max-width:315px}
+#contact .wa-contact-qr-link{display:block;width:max-content;margin:0 auto 18px;border-radius:14px;padding:9px;border:1px solid #e5eaf0;background:#fff;box-shadow:0 4px 15px rgba(15,28,45,.07);}
+#contact .wa-contact-qr-link img{display:block !important;width:184px !important;height:184px !important;max-width:none !important;object-fit:contain}
+#contact .wa-contact-direction-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 24px !important;margin:0 !important;border-radius:9px !important;background:#0f1c2d;color:#fff;font-size:16px;font-weight:700;text-decoration:none;min-height:47px;}
+@media(max-width:900px){
+ #contact .wa-contact-layout{gap:27px;grid-template-columns:minmax(0,1fr) minmax(265px,.9fr)}
+ #contact .wa-contact-row-value{font-size:16px}
+ #contact .wa-contact-map-card{padding:24px 18px}
+}
+@media(max-width:720px){
+ #contact.wa-contact-directions{padding:37px 16px 44px !important}
+ #contact .wa-contact-layout{display:flex !important;flex-direction:column;align-items:stretch;gap:25px}
+ #contact .wa-contact-info{width:100%}
+ #contact #wa-contact-title{font-size:33px !important}
+ #contact .wa-contact-intro{font-size:15px}
+ #contact .wa-contact-map-card{width:100%;padding:24px 16px}
+ #contact .wa-contact-row-value{font-size:16px}
+ #contact .wa-contact-row{padding:9px}
+}
+@media(prefers-reduced-motion:reduce){#contact .wa-contact-row,#contact .wa-contact-qr-link{transition:none}}
+
+</style>
+<style id="wa-contact-static-interactions">
+/* This entire section has no hover, active, transform or animation effects. */
+#contact, #contact *, #contact *::before, #contact *::after {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+}
+#contact .wa-contact-row:is(:hover,:active,:visited) {
+  color:#0f1c2d !important; background:#fff !important; border-color:#e6ebf0 !important;
+  box-shadow:0 2px 5px rgba(15,28,45,.02) !important;
+}
+#contact .wa-contact-row:is(:hover,:active,:visited) .wa-contact-row-value {color:#0f1c2d !important}
+#contact .wa-contact-qr-link:is(:hover,:active,:visited) {
+  background:#fff !important; border-color:#e5eaf0 !important;
+  box-shadow:0 4px 15px rgba(15,28,45,.07) !important;
+}
+#contact .wa-contact-direction-button:is(:hover,:active,:visited) {
+  background:#0f1c2d !important; color:#fff !important; box-shadow:none !important;
+}
+/* Accessible focus is drawn inside each control, never altering its box. */
+#contact .wa-contact-row:focus-visible,
+#contact .wa-contact-qr-link:focus-visible,
+#contact .wa-contact-direction-button:focus-visible {
+  outline:none !important; box-shadow:inset 0 0 0 2px #f28c28 !important;
+}
+#contact {overflow-anchor:none}
+</style>
+
+<style id="wa-booking-radio-responsive-fix">
+/* Fix iOS Safari/Samsung: generic input width:100% must not stretch radio controls. */
+.booking-container .radio-row {
+  width: 100%; max-width: 100%; min-width: 0; box-sizing: border-box;
+}
+.booking-container .radio-row label {
+  display: flex !important; align-items: center !important; gap: 10px !important;
+  min-width: 0; max-width: 100%; white-space: normal !important;
+  overflow-wrap: break-word; line-height: 1.45;
+}
+.booking-container .radio-row input[type="radio"] {
+  -webkit-appearance: radio; appearance: auto;
+  width: 20px !important; min-width: 20px !important; max-width: 20px !important;
+  height: 20px !important; flex: 0 0 20px !important;
+  margin: 0 !important; padding: 0 !important;
+  border-radius: 50% !important; accent-color: #f28c28;
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .booking-container .radio-row {
+    display: flex !important; flex-direction: column !important; align-items: stretch !important;
+    gap: 8px !important; margin: 8px 0 16px !important;
+  }
+  .booking-container .radio-row label {
+    width: 100% !important; padding: 8px 2px !important;
+    color: #0f1c2d !important; font-size: 16px !important;
+  }
+  .booking-container input:not([type="radio"]),
+  .booking-container select, .booking-container textarea {
+    max-width: 100% !important; min-width: 0 !important;
   }
 }
 </style>
@@ -1097,10 +1258,8 @@ header h2 {
 </div>
 </div>
 </nav>
-
-
 <header>
-<img alt="WiFi Accessories Logo" src="logo.jpg" style="width: 120px; height: auto; margin-bottom: 10px; background-color: #fff; padding: 5px; border-radius: 8px"/>
+<img alt="WiFi Accessories Logo" src="wifi-accessories-logo.jpg" style="width: 120px; height: auto; margin-bottom: 10px; background-color: #fff; padding: 5px; border-radius: 8px"/>
 <h1>
     WiFi Accessories
    </h1>
@@ -1110,11 +1269,10 @@ header h2 {
 </header>
 <section class="booking-form"><h3 style="color: #f28c28; font-size: 28px; margin-bottom: 10px; text-align: center;">Book an Appointment</h3><p style="color: #ffffff; font-size: 18px; margin: 0; text-align: center;">Schedule Your Device Repair Today</p><p style="color: #f28c28; font-size: 16px; margin-top: 8px; text-align: center;">Choose mobile service or visit our shop – we're here to help!</p><div class="booking-container" style="max-width: 600px; margin: auto;"><form action="https://formspree.io/f/xanljndd" method="POST">
 <input name="_next" type="hidden" value="thank-you.html"/>
-
-<input type="hidden" name="_subject" value="New Booking Request from WiFi Accessories"><label for="name" style="color: #ffffff; font-weight: bold;">Full Name</label>
+<input name="_subject" type="hidden" value="New Booking Request from WiFi Accessories"/><label for="name" style="color: #ffffff; font-weight: bold;">Full Name</label>
 <input id="name" name="name" placeholder="Full Name" required="" type="text"/>
 <label for="phone" style="color: #ffffff; font-weight: bold;">Phone Number</label>
-<input id="phone" name="phone" placeholder="Phone Number" required="" type="tel"/>
+<input id="phone" name="phone" placeholder="Phone Number" required="" type="tel">
 <label for="email" style="color: #ffffff; font-weight: bold;">Email Address</label>
 <input id="email" name="email" placeholder="Email Address" type="email"/>
 <label for="service" style="color: #ffffff; font-weight: bold;">Select Service</label>
@@ -1165,44 +1323,60 @@ header h2 {
 <button type="submit">Submit Booking</button>
 </div>
 <p style="color: #ffffff; text-align: center; font-size: 14px; margin-top: 10px;">Business Hours: Monday to Sunday, 7:00 AM – 10:00 PM</p>
-</form></div></section>
-<section class="contact" id="contact">
-<h3>
-    Contact Us
-   </h3>
-<a href="tel:+16479723290">
-    📞 647-972-3290
-   </a>
-<a href="mailto:wifiaccessories@gmail.com">
-    📧 wifiaccessories@gmail.com
-   </a>
-<a href="https://www.wifiaccessories.ca" target="_blank">
-    🌐 www.wifiaccessories.ca
-   </a>
-<p>
-    📍 7853 Butternut Blvd, Niagara Falls, Ontario L2H0N3
-   </p>
+</input></form></div></section>
+<section aria-labelledby="wa-contact-title" class="wa-contact-directions" id="contact">
+<div class="wa-contact-layout">
+<div class="wa-contact-info">
+<p class="wa-contact-eyebrow">We're here to help</p>
+<h2 id="wa-contact-title">Contact Us</h2>
+<p class="wa-contact-intro">Questions about a repair? Reach out or come visit us in Niagara Falls.</p>
+<div class="wa-contact-rows">
+<a class="wa-contact-row" href="tel:+16479723290">
+<span class="wa-contact-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.4 2.7a2 2 0 0 1-.6 1.8L7.7 9.4a16 16 0 0 0 6.9 6.9l1.2-1.2a2 2 0 0 1 1.8-.6l2.7.4A2 2 0 0 1 22 16.9Z"></path></svg></span>
+<span class="wa-contact-row-text"><span class="wa-contact-row-label">Call us</span><span class="wa-contact-row-value">647-972-3290</span></span>
+<span aria-hidden="true" class="wa-contact-row-arrow">↗</span>
+</a>
+<a class="wa-contact-row" href="mailto:wifiaccessories@gmail.com">
+<span class="wa-contact-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-10 6L2 7"></path></svg></span>
+<span class="wa-contact-row-text"><span class="wa-contact-row-label">Email us</span><span class="wa-contact-row-value">wifiaccessories@gmail.com</span></span>
+<span aria-hidden="true" class="wa-contact-row-arrow">↗</span>
+</a>
+<a class="wa-contact-row" href="https://wifiaccessories.ca/" rel="noopener noreferrer" target="_blank">
+<span class="wa-contact-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"></path></svg></span>
+<span class="wa-contact-row-text"><span class="wa-contact-row-label">Website</span><span class="wa-contact-row-value">wifiaccessories.ca</span></span>
+<span aria-hidden="true" class="wa-contact-row-arrow">↗</span>
+</a>
+<a class="wa-contact-row" href="https://www.google.com/maps/dir/?api=1&amp;destination=WiFi+Accessories%2C+7853+Butternut+Blvd%2C+Niagara+Falls%2C+ON+L2H+0N3&amp;destination_place_id=ChIJkfBjL_RF04kRilWtbec2WfM" rel="noopener noreferrer" target="_blank">
+<span class="wa-contact-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span>
+<span class="wa-contact-row-text"><span class="wa-contact-row-label">Visit us</span><span class="wa-contact-row-value">7853 Butternut Blvd, Niagara Falls, ON L2H 0N3</span></span>
+<span aria-hidden="true" class="wa-contact-row-arrow">↗</span>
+</a>
+</div>
+</div>
+<div class="wa-contact-map-card">
+<div aria-hidden="true" class="wa-contact-map-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></div>
+<h3>Scan or Click for Directions</h3>
+<p>Scan with your phone or click the QR code to open Google Maps directions to our location.</p>
+<a aria-label="Open Google Maps directions to WiFi Accessories in a new tab" class="wa-contact-qr-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=WiFi+Accessories%2C+7853+Butternut+Blvd%2C+Niagara+Falls%2C+ON+L2H+0N3&amp;destination_place_id=ChIJkfBjL_RF04kRilWtbec2WfM" rel="noopener noreferrer" target="_blank">
+<img alt="Scannable QR code for Google Maps directions to WiFi Accessories at 7853 Butternut Boulevard, Niagara Falls" decoding="async" height="184" loading="eager" src="assets/wifi-accessories-directions-qr.png" width="184">
+</img></a>
+<a class="wa-contact-direction-button" href="https://www.google.com/maps/dir/?api=1&amp;destination=WiFi+Accessories%2C+7853+Butternut+Blvd%2C+Niagara+Falls%2C+ON+L2H+0N3&amp;destination_place_id=ChIJkfBjL_RF04kRilWtbec2WfM" rel="noopener noreferrer" target="_blank">Get Directions <span aria-hidden="true">↗</span></a>
+</div>
+</div>
 </section>
 <section style="background:linear-gradient(to left, #0f1c2d, #f28c28); text-align:center; padding:30px 10px; color:#fff;">
 <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:30px;"><div><span style="font-size:24px;">💰</span><p>Best Price Guarantee</p></div><div><span style="font-size:24px;">⚡</span><p>Same-Day Repairs</p></div><div><span style="font-size:24px;">🧑‍🔧</span><p>Expert Technicians</p></div></div>
 </section>
-<div class="qr">
-<p>
-    Scan &amp; Find Us
-   </p>
-<img alt="QR Code" src="qr-code.jpg" style="width: 160px; height: auto; border: 4px solid #0f1c2d; border-radius: 10px; display: block; margin: 0 auto;"/>
-</div>
+
 <footer>
    © 2025 WiFi Accessories | Designed for tech-savvy customers.
   </footer>
-
 <div class="loader" id="loader">
    Loading...
   </div>
 <a class="whatsapp-fab" href="https://wa.me/16479723290" target="_blank" title="Chat on WhatsApp">
    💬
   </a>
-
 <script>
 document.addEventListener('click', function(event) {
   if (!event.target.matches('.nav-link')) {
@@ -1212,41 +1386,6 @@ document.addEventListener('click', function(event) {
     });
   }
 });
-</script>
-<div id="promo-popup" style="
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  color: #0f1c2d;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  z-index: 10000;
-  max-width: 90%;
-  text-align: center;
-">
-<h2 style="color: #f28c28;">🎉 Special Promotion!</h2>
-<p>Get 10% off on all device repairs this week only. Mention code <strong>WIFI10</strong> when you visit or book online.</p>
-<button onclick="document.getElementById('promo-popup').style.display='none'" style="
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #f28c28;
-    color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-  ">Close</button>
-</div>
-<script>
-  window.addEventListener('load', function () {
-    setTimeout(function () {
-      document.getElementById('promo-popup').style.display = 'block';
-    }, 2000);
-  });
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><script>
 $(document).ready(function(){
@@ -1297,8 +1436,6 @@ function toggleAddress(type) {
   });
 })();
 </script>
-
-
 <script id="aboutus-mobile-dropdown-js">
 (function(){
   function ready(fn){ if(document.readyState!=='loading'){fn()} else {document.addEventListener('DOMContentLoaded',fn)} }
@@ -1325,8 +1462,6 @@ function toggleAddress(type) {
   });
 })();
 </script>
-
-
 <script id="aboutus-nav-hover-active-js">
 (function(){
   function ready(fn){ if(document.readyState!=='loading'){fn()} else {document.addEventListener('DOMContentLoaded',fn)} }
@@ -1367,8 +1502,6 @@ function toggleAddress(type) {
   });
 })();
 </script>
-
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('form[action^="https://formspree.io/"]');
@@ -1394,6 +1527,141 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+<!-- Booking page uses the same Google Sheets special offer and ON/OFF rule as homepage. -->
+<dialog aria-describedby="wa-promo-message" aria-labelledby="wa-promo-title" id="wa-promo-dialog">
+<div class="wa-promo-head">
+<button aria-label="Close promotion" class="wa-promo-close" type="button">×</button>
+<h2 class="wa-promo-title" id="wa-promo-title">Special Offer</h2>
+</div>
+<div class="wa-promo-body">
+<p class="wa-promo-message" id="wa-promo-message"></p>
+<p class="wa-promo-code" hidden="" id="wa-promo-codebox">Code: <strong id="wa-promo-code"></strong></p>
+<a class="wa-promo-cta" href="#contact" id="wa-promo-contact">Contact Us</a>
+</div>
+</dialog>
+<script src="promotions-config.js?v=20261111"></script>
+<script>
+// Same sheet as homepage if promotions-config.js is temporarily missing.
+if(!/^https:\/\/docs\.google\.com\/spreadsheets\//i.test(String(window.WA_PROMOTIONS_CSV_URL||''))){
+  window.WA_PROMOTIONS_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSeLxXJlpHNfPNBo2aKGd3o1q4HBsL2sFnY2EerKfdLJlN9irbY2MUlq1Ru3pnh_6e6FBwGU2IKGJJD/pub?gid=1420962802&single=true&output=csv';
+}
+</script>
+<script id="wa-sheet-promotion-script">
 
+/* WIFI ACCESSORIES: GOOGLE SHEET ONLY. NO DEFAULT OR EXAMPLE OFFERS. */
+(function(){
+ 'use strict';
+ const dialog=document.getElementById('wa-promo-dialog');
+ if(!dialog||typeof dialog.showModal!=='function')return;
+ const title=document.getElementById('wa-promo-title');
+ const message=document.getElementById('wa-promo-message');
+ const codebox=document.getElementById('wa-promo-codebox');
+ const code=document.getElementById('wa-promo-code');
+ const contact=document.getElementById('wa-promo-contact');
+ const close=()=>{if(dialog.open)dialog.close();};
+ dialog.querySelector('.wa-promo-close').addEventListener('click',close);
+ dialog.addEventListener('click',e=>{if(e.target===dialog)close();});
+ contact.addEventListener('click',e=>{
+   const section=document.getElementById('contact');
+   if(!section)return;
+   e.preventDefault();close();
+   requestAnimationFrame(()=>section.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'}));
+ });
+ const debug=(location.hostname==='localhost'||location.hostname==='127.0.0.1')&&new URLSearchParams(location.search).get('promoStatus')==='1';
+ let statusBox=null;
+ function status(text,good){
+   console.info('WiFi Accessories Google Sheet:',text);
+   if(!debug)return;
+   if(!statusBox){
+     statusBox=document.createElement('div');
+     statusBox.id='wa-promotion-connection-status';
+     statusBox.setAttribute('role','status');
+     statusBox.style.cssText='position:fixed;z-index:2147483647;bottom:12px;left:12px;right:12px;max-width:620px;padding:16px 18px;border-radius:12px;background:#0f1c2d;color:#fff;font:600 14px/1.6 Arial,sans-serif;box-shadow:0 8px 34px #0006;white-space:pre-wrap;border:2px solid #f28c28';
+     document.body.appendChild(statusBox);
+   }
+   statusBox.textContent=(good?'CONNECTED: ':'PROMOTION CHECK: ')+text;
+ }
+ function parseCSV(text){
+   const rows=[];let row=[],value='',quoted=false;
+   text=String(text||'').replace(/^\uFEFF/,'');
+   for(let i=0;i<text.length;i++){
+     const c=text[i];
+     if(c==='"'){
+       if(quoted&&text[i+1]==='"'){value+='"';i++;}
+       else quoted=!quoted;
+     }else if(c===','&&!quoted){row.push(value);value='';}
+     else if((c==='\n'||c==='\r')&&!quoted){
+       if(c==='\r'&&text[i+1]==='\n')i++;
+       row.push(value);if(row.some(cell=>String(cell).trim()))rows.push(row);
+       row=[];value='';
+     }else value+=c;
+   }
+   row.push(value);if(row.some(cell=>String(cell).trim()))rows.push(row);
+   return rows;
+ }
+ function sheetCSVURL(text){
+   try{
+     const u=new URL(String(text||'').trim());
+     if(u.protocol!=='https:'||u.hostname!=='docs.google.com')return null;
+     const published=u.pathname.match(/^\/spreadsheets\/d\/e\/([a-zA-Z0-9_-]+)\/(pub|pubhtml)$/);
+     if(published){const gid=u.searchParams.get('gid')||u.hash.match(/gid=(\d+)/)?.[1]||'';return 'https://docs.google.com/spreadsheets/d/e/'+published[1]+'/pub?output=csv'+(/^\d+$/.test(gid)?'&gid='+gid+'&single=true':'');}
+     const id=u.pathname.match(/^\/spreadsheets\/d\/([a-zA-Z0-9_-]+)\/(?:edit|view|export|pub|pubhtml)?$/)?.[1];
+     if(!id)return null;
+     const hashgid=u.hash.match(/gid=(\d+)/)?.[1];
+     const gid=u.searchParams.get('gid')||hashgid||'0';
+     if(!/^\d+$/.test(gid))return null;
+     return 'https://docs.google.com/spreadsheets/d/'+id+'/export?format=csv&gid='+gid;
+   }catch(e){return null;}
+ }
+ function readSimpleOffer(csv){
+   const rows=parseCSV(csv);
+   if(!rows.length)return null; // Empty sheet: no offer.
+   const headings=rows[0].map(s=>String(s).toLowerCase().replace(/[^a-z0-9]/g,''));
+   const a=headings.indexOf('flashingtitle'),b=headings.indexOf('dealmessage'),c=headings.indexOf('promocode'),d=headings.indexOf('showoffer');
+   if(a<0||b<0||c<0||d<0){
+     // Fail closed: never show old/example offers without an explicit ON switch.
+     throw new Error('Sheet needs four headers: Flashing Title, Deal Message, Promo Code, Show Offer. Add D1 = Show Offer and D2 = ON or OFF.');
+   }
+   if(rows.length<2)return null;
+   const r=rows[1],clean=i=>String(r[i]??'').trim();
+   const enabled=clean(d).toUpperCase();
+   if(enabled!=='ON')return null; // OFF, empty, or anything else: no popup.
+   const offer={title:clean(a).slice(0,110),message:clean(b).slice(0,1000),code:clean(c).slice(0,60)};
+   if(!offer.title||!offer.message)return null; // No actual title/message: no popup.
+   return offer;
+ }
+ function show(offer){
+   title.textContent=offer.title;
+   message.textContent=offer.message;
+   codebox.hidden=!offer.code;
+   code.textContent=offer.code;
+   dialog.showModal();
+ }
+ async function init(){
+   // Intentionally no demo/preview mode: the popup must come from the Google Sheet only.
+   const configured=String(window.WA_PROMOTIONS_CSV_URL||'').trim();
+   const url=sheetCSVURL(configured);
+   if(!url){status('Google Sheet link is missing or invalid. Open promotions-config.js and paste your public Google Sheets link between quotation marks. Refresh the page.',false);return;}
+   status('Checking your Google Sheet...',false);
+   const controller=new AbortController();
+   const timeout=setTimeout(()=>controller.abort(),15000);
+   try{
+     const response=await fetch(url,{cache:'no-store',signal:controller.signal});
+     if(!response.ok)throw new Error('Google returned HTTP '+response.status);
+     const csv=await response.text();
+     if(csv.length>30000||/^\s*<(?:html|!doctype)/i.test(csv))throw new Error('Google did not return a CSV sheet. Publish the Offer tab as CSV and paste that link into promotions-config.js.');
+     const offer=readSimpleOffer(csv);
+     if(!offer){status('No active special deal: popup hidden. Set D2 to ON and fill A2/B2 to display it.',true);return;}
+     status('Active offer: '+offer.title+'\nMessage: '+offer.message+'\nCode: '+(offer.code||'(none)'),true);
+     show(offer);
+   }catch(err){
+     status('Could not load the Google Sheet: '+err.message+'\nCheck the sharing/publishing settings and URL.',false);
+     console.warn('WiFi Accessories promotion not displayed:',err);
+   }finally{clearTimeout(timeout);}
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+})();
+
+</script>
 </body>
 </html>

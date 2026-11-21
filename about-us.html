@@ -884,8 +884,6 @@ nav[data-nav="aboutus"] .dropdown-content.show{display:block !important}
 }
 header h2{ margin-bottom: 12px !important; }
 </style>
-
-
 <style id="tagline-one-line-fix">
 @media (max-width: 768px){
   header h2{
@@ -910,7 +908,6 @@ header h2 {
   display: inline-block !important;
 }
 </style>
-
 <style id="mobile-call-align-fix">
 @media (max-width: 768px){
   nav[data-nav="aboutus"] .nav-links .mobile-only{
@@ -937,7 +934,112 @@ header h2 {
   }
 }
 </style>
+<style id="wa-global-qr-styles">
 
+/* The homepage Google Maps QR design, shared on service and information pages. */
+.wa-global-qr-section{background:#fff!important;color:#0f1c2d!important;padding:35px 18px 42px!important;text-align:center!important;box-sizing:border-box;width:100%;max-width:100%;overflow:hidden}
+.wa-global-qr-section *{box-sizing:border-box}
+.wa-global-qr-section .wa-contact-map-card{max-width:430px;width:100%;margin:0 auto;padding:27px 24px 25px;border-radius:20px;border:1px solid #e6eaf0;box-shadow:0 10px 30px rgba(15,28,45,.07);background:#fff;text-align:center;min-width:0}
+.wa-global-qr-section .wa-contact-map-icon{display:flex;align-items:center;justify-content:center;color:#f28c28;background:#fff2e5;width:48px;height:48px;border-radius:50%;margin:0 auto 12px}
+.wa-global-qr-section .wa-contact-map-icon svg{width:24px;height:24px}
+.wa-global-qr-section .wa-contact-map-card h3{font:800 23px/1.26 Roboto,Arial,sans-serif!important;color:#0f1c2d!important;margin:0 0 9px!important;text-align:center!important}
+.wa-global-qr-section .wa-contact-map-card p{font:400 15px/1.5 Roboto,Arial,sans-serif!important;color:#637186!important;margin:0 auto 18px!important;max-width:315px;text-align:center!important}
+.wa-global-qr-section .wa-contact-qr-link{display:block;width:max-content;max-width:100%;margin:0 auto 18px!important;border-radius:14px;padding:9px!important;border:1px solid #e5eaf0;background:#fff;box-shadow:0 4px 15px rgba(15,28,45,.07);text-decoration:none!important}
+.wa-global-qr-section .wa-contact-qr-link img{display:block!important;width:184px!important;height:184px!important;max-width:100%!important;object-fit:contain;border:0!important;border-radius:0!important;margin:0!important}
+.wa-global-qr-section .wa-contact-direction-button{display:inline-flex!important;align-items:center;justify-content:center;gap:10px;padding:12px 24px!important;margin:0!important;border-radius:9px!important;background:#0f1c2d!important;color:#fff!important;font:700 16px/1.4 Roboto,Arial,sans-serif!important;text-decoration:none!important;min-height:47px!important;width:auto!important;max-width:100%;box-shadow:none!important}
+.wa-global-qr-section a:focus-visible{outline:3px solid #f28c28!important;outline-offset:3px}
+/* Keep QR links completely steady, as on the current homepage. */
+.wa-global-qr-section,.wa-global-qr-section *,.wa-global-qr-section *::before,.wa-global-qr-section *::after{animation:none!important;transition:none!important;transform:none!important}
+@media(max-width:480px){.wa-global-qr-section{padding:23px 12px 30px!important}.wa-global-qr-section .wa-contact-map-card{padding:22px 14px}.wa-global-qr-section .wa-contact-map-card h3{font-size:21px!important}}
+
+</style>
+<style id="wa-contact-directions-styles">
+
+/* WiFi Accessories – enhanced contact/directions section; scoped to avoid other pages and reviews */
+#contact.wa-contact-directions {
+  background: linear-gradient(180deg,#fff 0%,#f8fafc 100%) !important;
+  color:#0f1c2d !important;
+  padding:55px 24px 58px !important;
+  text-align:left !important;
+}
+#contact .wa-contact-layout {
+  max-width:1120px;
+  margin:0 auto;
+  display:grid !important;
+  grid-template-columns:minmax(0,1.14fr) minmax(315px,.86fr);
+  align-items:center;
+  gap:50px;
+}
+#contact .wa-contact-info{min-width:0}
+#contact .wa-contact-eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#9c642e;margin:0 0 6px}
+#contact #wa-contact-title{color:#f28c28 !important;font-size:38px !important;font-weight:800;line-height:1.15;margin:0 0 10px !important;text-align:left}
+#contact .wa-contact-intro{font-size:16px;line-height:1.55;color:#637186;margin:0 0 21px;max-width:510px}
+#contact .wa-contact-rows{display:flex;flex-direction:column;gap:9px}
+#contact .wa-contact-row{
+ display:flex;align-items:center;gap:15px;padding:10px 12px 10px 10px;min-height:61px;
+ background:#fff;color:#0f1c2d;text-decoration:none;border:1px solid #e6ebf0;border-radius:12px;
+ box-shadow:0 2px 5px rgba(15,28,45,.02);
+}
+#contact .wa-contact-row:focus-visible,#contact .wa-contact-qr-link:focus-visible,#contact .wa-contact-direction-button:focus-visible{outline:3px solid #f28c28;outline-offset:3px}
+#contact .wa-contact-icon{display:flex;align-items:center;justify-content:center;flex:0 0 43px;width:43px;height:43px;border-radius:10px;background:#fff2e5;color:#e87917}
+#contact .wa-contact-icon svg{width:21px;height:21px}
+#contact .wa-contact-row-text{min-width:0;display:flex;flex-direction:column;gap:3px;flex:1}
+#contact .wa-contact-row-label{font-size:12px;font-weight:700;color:#69778a;line-height:1.2}
+#contact .wa-contact-row-value{font-size:18px;font-weight:650;color:#0f1c2d;line-height:1.4;overflow-wrap:anywhere}
+#contact .wa-contact-row-arrow{font-size:18px;line-height:1;color:#a4afbb;margin-left:auto}
+#contact .wa-contact-map-card{padding:27px 24px 25px;border-radius:20px;border:1px solid #e6eaf0;box-shadow:0 10px 30px rgba(15,28,45,.07);background:#fff;text-align:center;min-width:0}
+#contact .wa-contact-map-icon{display:flex;align-items:center;justify-content:center;color:#f28c28;background:#fff2e5;width:48px;height:48px;border-radius:50%;margin:0 auto 12px}
+#contact .wa-contact-map-icon svg{width:24px;height:24px}
+#contact .wa-contact-map-card h3{font-size:23px !important;line-height:1.26;color:#0f1c2d;margin:0 0 9px;font-weight:800}
+#contact .wa-contact-map-card p{font-size:15px;line-height:1.5;color:#637186;margin:0 auto 18px;max-width:315px}
+#contact .wa-contact-qr-link{display:block;width:max-content;margin:0 auto 18px;border-radius:14px;padding:9px;border:1px solid #e5eaf0;background:#fff;box-shadow:0 4px 15px rgba(15,28,45,.07);}
+#contact .wa-contact-qr-link img{display:block !important;width:184px !important;height:184px !important;max-width:none !important;object-fit:contain}
+#contact .wa-contact-direction-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 24px !important;margin:0 !important;border-radius:9px !important;background:#0f1c2d;color:#fff;font-size:16px;font-weight:700;text-decoration:none;min-height:47px;}
+@media(max-width:900px){
+ #contact .wa-contact-layout{gap:27px;grid-template-columns:minmax(0,1fr) minmax(265px,.9fr)}
+ #contact .wa-contact-row-value{font-size:16px}
+ #contact .wa-contact-map-card{padding:24px 18px}
+}
+@media(max-width:720px){
+ #contact.wa-contact-directions{padding:37px 16px 44px !important}
+ #contact .wa-contact-layout{display:flex !important;flex-direction:column;align-items:stretch;gap:25px}
+ #contact .wa-contact-info{width:100%}
+ #contact #wa-contact-title{font-size:33px !important}
+ #contact .wa-contact-intro{font-size:15px}
+ #contact .wa-contact-map-card{width:100%;padding:24px 16px}
+ #contact .wa-contact-row-value{font-size:16px}
+ #contact .wa-contact-row{padding:9px}
+}
+@media(prefers-reduced-motion:reduce){#contact .wa-contact-row,#contact .wa-contact-qr-link{transition:none}}
+
+</style>
+<style id="wa-contact-static-interactions">
+/* This entire section has no hover, active, transform or animation effects. */
+#contact, #contact *, #contact *::before, #contact *::after {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+}
+#contact .wa-contact-row:is(:hover,:active,:visited) {
+  color:#0f1c2d !important; background:#fff !important; border-color:#e6ebf0 !important;
+  box-shadow:0 2px 5px rgba(15,28,45,.02) !important;
+}
+#contact .wa-contact-row:is(:hover,:active,:visited) .wa-contact-row-value {color:#0f1c2d !important}
+#contact .wa-contact-qr-link:is(:hover,:active,:visited) {
+  background:#fff !important; border-color:#e5eaf0 !important;
+  box-shadow:0 4px 15px rgba(15,28,45,.07) !important;
+}
+#contact .wa-contact-direction-button:is(:hover,:active,:visited) {
+  background:#0f1c2d !important; color:#fff !important; box-shadow:none !important;
+}
+/* Accessible focus is drawn inside each control, never altering its box. */
+#contact .wa-contact-row:focus-visible,
+#contact .wa-contact-qr-link:focus-visible,
+#contact .wa-contact-direction-button:focus-visible {
+  outline:none !important; box-shadow:inset 0 0 0 2px #f28c28 !important;
+}
+#contact {overflow-anchor:none}
+</style>
 </head>
 <body>
 <nav data-nav="aboutus" style="background-color:#ffffff; padding:12px 20px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
@@ -988,10 +1090,8 @@ header h2 {
 </div>
 </div>
 </nav>
-
-
 <header>
-<img alt="WiFi Accessories Logo" src="logo.jpg" style="width: 120px; height: auto; margin-bottom: 10px; background-color: #fff; padding: 5px; border-radius: 8px"/>
+<img alt="WiFi Accessories Logo" src="wifi-accessories-logo.jpg" style="width: 120px; height: auto; margin-bottom: 10px; background-color: #fff; padding: 5px; border-radius: 8px"/>
 <h1>
     WiFi Accessories
    </h1>
@@ -1000,86 +1100,114 @@ header h2 {
    </h2>
 </header>
 <section style="padding: 60px 20px; background-color: #0f1c2d; color: white; font-size: 20px; line-height: 1.9;">
-  <div style="max-width: 900px; margin: auto; text-align: justify;">
-    <h2 style="color: #f28c28; font-size: 36px; text-align: center; margin-bottom: 30px;">About WiFi Accessories</h2>
-
-    <p style="margin-bottom: 20px;">
+<div style="max-width: 900px; margin: auto; text-align: justify;">
+<h2 style="color: #f28c28; font-size: 36px; text-align: center; margin-bottom: 30px;">About WiFi Accessories</h2>
+<p style="margin-bottom: 20px;">
       WiFi Accessories is introducing a unique, all-in-one solution where your digital device repair and IT services needs are handled under one roof.
     </p>
-
-    <p style="margin-bottom: 20px;">
+<p style="margin-bottom: 20px;">
       In today’s fast-paced world, businesses depend on smartphones, tablets, laptops, and digital devices—not just for communication, but for essential daily operations.
       However, a clear gap exists in the industry: most IT service providers don’t repair hardware, and most repair shops don’t offer advanced IT solutions.
     </p>
-
-    <p style="margin-bottom: 20px;">
+<p style="margin-bottom: 20px;">
       WiFi Accessories bridges that gap.
     </p>
-
-    <p style="margin-bottom: 20px;">
-      With over 10 years of hands-on experience in tech repairs and IT support, we deliver fast, reliable, and cost-effective solutions tailored to your specific needs.
-      Since 2017, we’ve proudly served the Niagara Region, earning the trust of both individuals and businesses.
-      We are also a Better Business Bureau (BBB) accredited company—recognized as one of the most trusted and respected names in the region by both consumers and local businesses.
-    </p>
-
-    <p style="margin-bottom: 20px;">
+<p style="margin-bottom: 20px;">With over 10 years of hands-on experience in tech repairs and IT support, we deliver fast, reliable, and cost-effective solutions tailored to your specific needs. Since 2017, we’ve proudly served the Niagara Region, earning the trust of both individuals and businesses. We are proud to be a Better Business Bureau (BBB) accredited company, trusted by consumers and local businesses across the region, and to have been named among ThreeBestRated®’s Top 3 Cell Phone Repair Shops in Niagara Falls for 2026.</p>
+<p style="margin-bottom: 20px;">
       Whether it’s a broken device, a sluggish system, or complex IT services like networking, cloud computing, virtualization, or cybersecurity, our expert team has you covered.
       If your business operations are impacted, we’ll get you back up and running—quickly and professionally.
     </p>
-
-    <p>
+<p>
       At WiFi Accessories, we don’t just fix devices—we power your productivity.
     </p>
-  </div>
+</div>
 </section>
-
-  <section style="background: linear-gradient(to left, #ffe4cc, #e6f0ff); color: #0f1c2d; padding: 20px 20px 5px; text-align: center; margin-bottom: 0;">
-  <h2 style="color: #f28c28; font-size: 28px; margin-bottom: 10px;">Better Business Bureau Accredited</h2>
-  <img src="bbb-seal.png"
-       alt="BBB Accredited Business"
-       style="width: 250px; height: auto; display: block; margin: 5px auto 10px;">
-  <p style="max-width: 800px; margin: auto; margin-bottom: 0;">
-    WiFi Accessories is proud to be an <strong>Accredited Business with the Better Business Bureau</strong>.
-    This recognition reflects our commitment to customer trust, transparency, and excellence in service.
-  </p>
+<section aria-labelledby="about-awards-title" style="background: linear-gradient(to left, #ffe4cc, #e6f0ff); color: #0f1c2d; padding: 34px 20px 36px; text-align: center; margin-bottom: 0;">
+<div style="max-width: 1120px; margin: 0 auto;">
+<h2 id="about-awards-title" style="color:#f28c28; font-size:30px; margin-bottom:14px;">Awards &amp; Accreditations</h2>
+<p style="max-width: 900px; margin: 0 auto 26px; font-size: 17px; line-height: 1.7; color: #243447;">
+      WiFi Accessories is proud to be recognized in Niagara Falls for trusted service, quality repairs, and customer satisfaction.
+      We were recognized by <strong>ThreeBestRated®</strong> among the <strong>Top 3 Cell Phone Repair Shops in Niagara Falls</strong>,
+      and we are also a <strong>Better Business Bureau Accredited Business</strong>. These recognitions reflect our commitment to honest service,
+      dependable repairs, and professional support for both individuals and local businesses.
+    </p>
+<div style="display:flex; flex-wrap:wrap; align-items:stretch; justify-content:center; gap:28px;">
+<div style="flex:1 1 330px; max-width: 480px; min-width: 280px; background: rgba(255,255,255,0.72); border: 1px solid rgba(15,28,45,0.08); border-radius: 22px; padding: 22px 18px 24px; box-shadow: 0 10px 28px rgba(15,28,45,0.08);">
+<a href="https://threebestrated.ca/cell-phone-repair-in-niagara-falls-on" rel="noopener" style="display:inline-block; border:0;" target="_blank">
+<img alt="ThreeBestRated 2026 Best Cell Phone Repair Niagara Falls" decoding="async" height="290" onerror="this.onerror=null;this.src='assets/threebestrated-2026-white-gold-award.png'" src="assets/threebestrated-2026-white-gold-award.svg" style="display:block; width: 290px; max-width: 100%; height: auto; margin: 0 auto 14px;" width="290"/>
+</a>
+<h3 style="font-size:24px; color:#0f1c2d; margin: 0 0 8px;">ThreeBestRated® 2026</h3>
+<p style="margin:0; font-size:16px; line-height:1.65; color:#243447;">
+          Proudly recognized as one of the <strong>Top 3 Cell Phone Repair Shops in Niagara Falls</strong> for service quality,
+          customer reviews, trust, and business reputation.
+        </p>
+</div>
+<div style="flex:1 1 330px; max-width: 480px; min-width: 280px; background: rgba(255,255,255,0.72); border: 1px solid rgba(15,28,45,0.08); border-radius: 22px; padding: 22px 18px 24px; box-shadow: 0 10px 28px rgba(15,28,45,0.08);">
+<a href="https://www.bbb.org/ca/on/niagara-falls/profile/electronic-equipment-repair/wifi-accessories-0107-1412577" rel="noopener noreferrer" style="display:inline-block; border:0;" target="_blank">
+<img alt="BBB Accredited Business" decoding="async" height="314" src="bbb-accredited-business-badge.png" style="display:block; width: 220px; max-width: 100%; height: auto; margin: 0 auto 14px;" width="220"/>
+</a>
+<h3 style="font-size:24px; color:#0f1c2d; margin: 0 0 8px;">BBB Accredited Business</h3>
+<p style="margin:0; font-size:16px; line-height:1.65; color:#243447;">
+          WiFi Accessories is proud to be an <strong>Accredited Business with the Better Business Bureau</strong>, reflecting our dedication
+          to transparency, customer trust, and excellence in service.
+        </p>
+</div>
+</div>
+</div>
 </section>
-<section class="contact" id="contact">
-<h3>
-    Contact Us
-   </h3>
-<a href="tel:+16479723290">
-    📞 647-972-3290
-   </a>
-<a href="mailto:wifiaccessories@gmail.com">
-    📧 wifiaccessories@gmail.com
-   </a>
-<a href="https://www.wifiaccessories.ca" target="_blank">
-    🌐 www.wifiaccessories.ca
-   </a>
-<p>
-    📍 7853 Butternut Blvd, Niagara Falls, Ontario L2H0N3
-   </p>
+<section aria-labelledby="wa-contact-title" class="wa-contact-directions" id="contact">
+<div class="wa-contact-layout">
+<div class="wa-contact-info">
+<p class="wa-contact-eyebrow">We're here to help</p>
+<h2 id="wa-contact-title">Contact Us</h2>
+<p class="wa-contact-intro">Questions about a repair? Reach out or come visit us in Niagara Falls.</p>
+<div class="wa-contact-rows">
+<a class="wa-contact-row" href="tel:+16479723290">
+<span class="wa-contact-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.4 2.7a2 2 0 0 1-.6 1.8L7.7 9.4a16 16 0 0 0 6.9 6.9l1.2-1.2a2 2 0 0 1 1.8-.6l2.7.4A2 2 0 0 1 22 16.9Z"></path></svg></span>
+<span class="wa-contact-row-text"><span class="wa-contact-row-label">Call us</span><span class="wa-contact-row-value">647-972-3290</span></span>
+<span aria-hidden="true" class="wa-contact-row-arrow">↗</span>
+</a>
+<a class="wa-contact-row" href="mailto:wifiaccessories@gmail.com">
+<span class="wa-contact-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-10 6L2 7"></path></svg></span>
+<span class="wa-contact-row-text"><span class="wa-contact-row-label">Email us</span><span class="wa-contact-row-value">wifiaccessories@gmail.com</span></span>
+<span aria-hidden="true" class="wa-contact-row-arrow">↗</span>
+</a>
+<a class="wa-contact-row" href="https://wifiaccessories.ca/" rel="noopener noreferrer" target="_blank">
+<span class="wa-contact-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"></path></svg></span>
+<span class="wa-contact-row-text"><span class="wa-contact-row-label">Website</span><span class="wa-contact-row-value">wifiaccessories.ca</span></span>
+<span aria-hidden="true" class="wa-contact-row-arrow">↗</span>
+</a>
+<a class="wa-contact-row" href="https://www.google.com/maps/dir/?api=1&amp;destination=WiFi+Accessories%2C+7853+Butternut+Blvd%2C+Niagara+Falls%2C+ON+L2H+0N3&amp;destination_place_id=ChIJkfBjL_RF04kRilWtbec2WfM" rel="noopener noreferrer" target="_blank">
+<span class="wa-contact-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span>
+<span class="wa-contact-row-text"><span class="wa-contact-row-label">Visit us</span><span class="wa-contact-row-value">7853 Butternut Blvd, Niagara Falls, ON L2H 0N3</span></span>
+<span aria-hidden="true" class="wa-contact-row-arrow">↗</span>
+</a>
+</div>
+</div>
+<div class="wa-contact-map-card">
+<div aria-hidden="true" class="wa-contact-map-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></div>
+<h3>Scan or Click for Directions</h3>
+<p>Scan with your phone or click the QR code to open Google Maps directions to our location.</p>
+<a aria-label="Open Google Maps directions to WiFi Accessories in a new tab" class="wa-contact-qr-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=WiFi+Accessories%2C+7853+Butternut+Blvd%2C+Niagara+Falls%2C+ON+L2H+0N3&amp;destination_place_id=ChIJkfBjL_RF04kRilWtbec2WfM" rel="noopener noreferrer" target="_blank">
+<img alt="Scannable QR code for Google Maps directions to WiFi Accessories at 7853 Butternut Boulevard, Niagara Falls" decoding="async" height="184" loading="eager" src="assets/wifi-accessories-directions-qr.png" width="184">
+</img></a>
+<a class="wa-contact-direction-button" href="https://www.google.com/maps/dir/?api=1&amp;destination=WiFi+Accessories%2C+7853+Butternut+Blvd%2C+Niagara+Falls%2C+ON+L2H+0N3&amp;destination_place_id=ChIJkfBjL_RF04kRilWtbec2WfM" rel="noopener noreferrer" target="_blank">Get Directions <span aria-hidden="true">↗</span></a>
+</div>
+</div>
 </section>
 <section style="background:linear-gradient(to left, #0f1c2d, #f28c28); text-align:center; padding:30px 10px; color:#fff;">
 <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:30px;"><div><span style="font-size:24px;">💰</span><p>Best Price Guarantee</p></div><div><span style="font-size:24px;">⚡</span><p>Same-Day Repairs</p></div><div><span style="font-size:24px;">🧑‍🔧</span><p>Expert Technicians</p></div></div>
 </section>
-<div class="qr">
-<p>
-    Scan &amp; Find Us
-   </p>
-<img alt="QR Code" src="qr-code.jpg" style="width: 160px; height: auto; border: 4px solid #0f1c2d; border-radius: 10px; display: block; margin: 0 auto;"/>
-</div>
+
 <footer>
    © 2025 WiFi Accessories | Designed for tech-savvy customers.
   </footer>
-
 <div class="loader" id="loader">
    Loading...
   </div>
 <a class="whatsapp-fab" href="https://wa.me/16479723290" target="_blank" title="Chat on WhatsApp">
    💬
   </a>
-
 <script>
 document.addEventListener('click', function(event) {
   if (!event.target.matches('.nav-link')) {
@@ -1093,7 +1221,7 @@ document.addEventListener('click', function(event) {
 <script>
   window.addEventListener('load', function () {
     setTimeout(function () {
-      document.getElementById('promo-popup').style.display = 'block';
+      var popup = document.getElementById('promo-popup'); if (popup) { popup.style.display = 'block'; }
     }, 2000);
   });
 </script>
@@ -1133,8 +1261,6 @@ $(document).ready(function(){
   });
 })();
 </script>
-
-
 <script id="aboutus-mobile-dropdown-js">
 (function(){
   function ready(fn){ if(document.readyState!=='loading'){fn()} else {document.addEventListener('DOMContentLoaded',fn)} }
@@ -1172,8 +1298,6 @@ $(document).ready(function(){
   });
 })();
 </script>
-
-
 <script id="aboutus-nav-hover-active-js">
 (function(){
   function ready(fn){ if(document.readyState!=='loading'){fn()} else {document.addEventListener('DOMContentLoaded',fn)} }
@@ -1214,6 +1338,5 @@ $(document).ready(function(){
   });
 })();
 </script>
-
 </body>
 </html>
